@@ -11,7 +11,7 @@ class Footer extends Component {
     render(){
         return(
             <footer>
-                <img src={bg-footer} alt="bg-footer" />
+                <img src={bg_footer} alt="bg-footer" />
                 <div>
                     <div>icones réseaux sociaux</div>
                     <div>
