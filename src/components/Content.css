@@ -1,9 +1,5 @@
-h1{
-    text-align :center;
-    margin : 0 auto;
-    padding-top : 204px;
-}
 
+/*Le centre de la pae */
 .header{
     display: flex;
     flex-flow: row nowrap;
@@ -17,8 +13,9 @@ h1{
     text-align : center;
     margin: 55px auto;
     color : #6BF8AC;
-    
-
+    text-align :center;
+    margin : 0 auto;
+    padding-top : 204px;
 }
 p {
     font-size : 10px;
@@ -37,23 +34,30 @@ p {
     border-style: none;
     margin-bottom: 80px;
 }
+
+/*Suivez-Trouver-Rencontrer*/
 .card {
     display :flex;
     padding-top : 50px;
     margin-top : 40px;
     border-radius: 20%;
+    background-color: #1C051C;
 }
 .card-body{
     padding : 30px;
 }
+p {
+    color : white;
+}
 .image .card-body {
     height : 20px;
-    text-align : center;
+    text-align : center;  
 }
 
 h3{
     text-align : center;
     padding : 5px;
+    color : #6BF8AC;
 }
 .img1 {
     width : 64px;
@@ -79,7 +83,14 @@ h3{
     flex-direction : row;
     background-color: #1C051C;
 }
+h3{
+    font-family: 'jmh_horrorhorror';
+}
+.circle {
+    border-style: 1px solid white;
+}
 
+/*Les Partenaires*/
 .partenaires .container{
     flex-flow: row nowrap ;
     align-items: center ;
@@ -114,6 +125,7 @@ img {
     padding : 10px;
 }
 h4 {
+    font-family: 'jmh_horrorhorror';
     padding: 15px;
     margin-bottom: 30px;
 }

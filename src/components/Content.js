@@ -29,7 +29,9 @@ class Accueil extends Component {
         <Card>
             
             <CardBody className="image">
+            <div className = "circle">
             <CardImg className ="img1"  src={picto_suivez}alt="" />
+            </div>
               <h3>Suivez</h3>
               <CardText>L'actualité des meilleurs films d'horreurs</CardText>
             </CardBody>
@@ -39,7 +41,9 @@ class Accueil extends Component {
           <Col sm={4}>
           <Card>
             <CardBody className="image">
+              <div className = "circle">
             <CardImg className ="img2" src = {picto_trouvez}alt="" />
+            </div>
               <h3>Trouver</h3>
               <CardText>L'actualité des meilleurs films d'horreurs</CardText>
             </CardBody>
@@ -49,7 +53,9 @@ class Accueil extends Component {
           <Col sm={4}>
           <Card>
             <CardBody className="image">
+            <div className = "circle">
             <CardImg className ="img3" src = {picto_rencontrez}alt="" />
+            </div>
               <h3>Rencontrez </h3>
               <CardText>Les monstres dans des lieux insolites</CardText>
             </CardBody>
@@ -64,9 +70,10 @@ class Accueil extends Component {
       <Container className="partenaires">
       <h4> Nos partenaires</h4>
         <div className = "movie">
-          <img src="https://zupimages.net/up/19/44/ecah.jpg" alt="netflix"></img>
-          <img src="https://c7.uihere.com/files/369/573/203/pathe-cordeliers-pathe-vaise-pathe-bellecour-cinema-digest-thumb.jpg" alt="pathe"></img>
+          <img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c529.png" alt="netflix"></img>
           <img src="https://upload.wikimedia.org/wikipedia/fr/1/1f/Gaumont_1995.svg" alt="gaumont"></img>
+          <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/f/f8/Path%C3%A9_Logo.svg/1280px-Path%C3%A9_Logo.svg.png" alt="pathe"></img>
+          <img src="https://files.slack.com/files-pri/T6SG2QGG2-FQ1JDMU4F/la-nuit-de-l_horreur.png" alt="pathe"></img>
           </div>
         </Container>
 
