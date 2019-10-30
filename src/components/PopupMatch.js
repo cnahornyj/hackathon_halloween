@@ -34,16 +34,16 @@ class PopupMatch extends React.Component {
           >
             <p class="match">It's a Monster Match!</p>
             <Row>
-              <Col md={{ span: 3, offset: 3 }}>
+              <Col>
                   <Card.Img variant="top" class="img" src="https://i.frg.im/u4tvA62n/bmatb72535_600.jpg?v=1528286304.147" />
-                  <Card.Title>Psedo</Card.Title>
+                  <Card.Title style={{ color:" #E54C84" }}>Psedo</Card.Title>
               </Col>
               <Col md={{ span: 3, offset: 1 }}>
                   <Card.Img variant="top" class="img" src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/14199781_580940452107770_8225117799363717883_n.jpg?_nc_cat=100&_nc_oc=AQmDRUZuMw5_7L18PNfjyZIdBI9yKy2Qkq52QjIEGneoWL6LUgDzp30mJpkdhOtMJAE&_nc_ht=scontent-cdt1-1.xx&oh=9b6f420dc14fa46b1e02bd7a7144ef04&oe=5E5AB344" />
-                  <Card.Title>Psedo</Card.Title>          
+                  <Card.Title style={{ color:" #E54C84" }}>Psedo</Card.Title>          
               </Col>
             </Row>
-              <h2 style={{ textAlign: "center" }}>Choisie ton lieux de rencontre</h2>
+              <h2 style={{ textAlign: "center", color: "#6BF8AC" }}>Choisie ton lieux de rencontre</h2>
             <Row>
               <Col >
                 <Card style={{ width: '15rem' }}>
