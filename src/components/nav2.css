@@ -9,15 +9,15 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color:  #E54C84;
+    padding-top: 20px;
 
 }
 
-.pNav2 {
-    font-family: 'jmh_horrorhorror';
-    font-size: 2em;
-    color: #E2E0E2;
-    margin-left: 80px;
+.imgLogoNav2 {
 
+    width: 400px;
+    height: auto;
+    margin: 0 60px;
 }
 
 .liNav2 {
@@ -37,7 +37,7 @@ body {
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .navNav2 {
         flex-flow: column nowrap;
         justify-content: center;
