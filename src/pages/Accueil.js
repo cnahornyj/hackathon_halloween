@@ -1,39 +1,29 @@
-import React,{ Component} from 'react';
-import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
+import React, { Component } from 'react';
+import Content  from '../components/Content'
+import Footer  from '../components/Footer'
+import Nav1  from '../components/Nav1'
+import Nav2  from '../components/Nav2'
+
 
 
 
 class Accueil extends Component {
-  render(){
-    return(
+  render() {
+    return (
       <div>
-          <InputGroup>
-            <InputGroupAddon addonType="prepend">
-              <InputGroupText>To the Left!</InputGroupText>
-            </InputGroupAddon>
-            <Input />
-          </InputGroup>
-          <br />
-          <InputGroup>
-            <Input />
-            <InputGroupAddon addonType="append">
-         >
-            </InputGroupAddon>
-          </InputGroup>
-          <br />
-          <InputGroup>
-            <InputGroupAddon addonType="prepend">
-          
-            </InputGroupAddon>
-            <Input placeholder="and..." />
-            <InputGroupAddon addonType="append">
-              <InputGroupText>To the Right!</InputGroupText>
-            </InputGroupAddon>
-          </InputGroup>
+        <Nav1 />
+        <Content/>
+        <Footer />
       </div>
+
     )
   }
 }
-   
-  export default Accueil;
-  
+
+export default Accueil;
+
+
+
+
+
+
