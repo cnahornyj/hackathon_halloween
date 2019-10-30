@@ -9,21 +9,22 @@ class Accueil extends Component {
   render() {
     return (
       <div>
+        
         <Container>
           <h1>ADOPTE UN MONSTRE</h1>
           <p> Le premier site de rencontre pour tous les amateurs de films d'horreurs</p>
           <button> Je m'inscris </button>
-        </div>
+          </Container>
 
         <Container>
           <img src="#" alt="img1"></img>
           <img src="#" alt="img2"></img>
           <img src="#" alt="img3"></img>
-        </div>
+          </Container>
 
         <Container>
           <h3> Nos partenaires </h3>
-          <div>
+       
             <Card inverse>
               <CardImg width="100%" src="/assets/318x270.svg" alt="Card image cap" />
               <CardImgOverlay>
@@ -52,16 +53,16 @@ class Accueil extends Component {
 
               </CardImgOverlay>
             </Card>
-          </div>
+            </Container>
       
-          <Container>
+          <Container className="partners">
         <div className="partners">
         <Row>
         <Col xs="6">.col-6</Col>
         <Col xs="6">.col-6</Col>
         </Row>
-
         </Container>
+    
     <Container>
      
       
