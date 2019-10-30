@@ -1,6 +1,7 @@
 
 import React,{ Component} from 'react';
 import PopupMatch from './components/PopupMatch';
+import Accueil from './pages/Accueil';
 
 class App extends Component {
    
