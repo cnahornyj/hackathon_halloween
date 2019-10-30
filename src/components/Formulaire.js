@@ -1,17 +1,47 @@
 import React from 'react';
 import { Form, FormGroup, Label, Input, Col } from 'reactstrap';
+import DisplayMovies from './DisplayMovies';
+import axios from "axios";
 
-const Formulaire = (props) => {
+class Formulaire extends React.Component {
+  constructor () {
+    super();
+    this.state = {
+      movies: null
+    };
+    this.getMovies = this.getMovies.bind(this);
+  }
+
+  componentDidMount() {
+    this.getMovies();
+  }
+
+  getMovies() {
+    // Send the request
+    axios
+      .get("https://hackathon-wild-hackoween.herokuapp.com/movies")
+      // Extract the DATA from the received response
+      .then(response => response.data)
+      // Use this data to update the state
+      .then(data => {
+        console.log(data.movies);
+        this.setState({
+          movies: data.movies[23]
+        });
+      });
+  }
+
+  render(){
   return (
+    <div>
 
     <Form>
-
       <FormGroup>
         <Label for="exampleEmail">Choisissez votre avatar monstre :</Label>
         <Input type="textarea" name="text" id="exampleText" />
       </FormGroup>
 
-      < FormGroup>
+      <FormGroup>
         <Label for="exampleEmail">Pseudo :</Label>
         <Input type="textarea" name="text" id="exampleText" />
       </FormGroup>
@@ -89,7 +119,18 @@ const Formulaire = (props) => {
         </Input>
       </FormGroup>
     </Form>
-  );
+    
+    {this.state.movies ? (
+          <DisplayMovies movies={this.state.movies} />
+        ) : (
+          <p>No data yet</p>
+        )}
+
+    </div>
+
+    );
+  }
 }
+
 
 export default Formulaire;
