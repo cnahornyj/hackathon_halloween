@@ -35,9 +35,9 @@ class PopupMatch extends React.Component {
              style={{content: {backgroundColor: '#1C051C' }}}
              isOpen={this.state.showModal} 
           >
-            
+
           <Container> 
-            <p className="match">It's a Monster Match!</p>
+            <h1 className="match">It's a Monster Match!</h1>
             <Row style={{ alignItems: "center" }}>
               <Col sm={4} style={{ textAlign:"center" }}>
                 <Card.Img variant="top" class="img" src="https://i.frg.im/u4tvA62n/bmatb72535_600.jpg?v=1528286304.147" />
