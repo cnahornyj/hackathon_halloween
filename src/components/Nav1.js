@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './nav1.css';
 import '../style.css';
+import logo from '../img/logo.png';
 
 
 
@@ -14,7 +15,7 @@ class Nav1 extends Component {
         return(
             <nav className="navNav1">
                 <div className="flexNav1">
-                    <p className="pourAbsoluteP">ADOPTE UN MONSTRE</p>
+                    <img src={logo} className="imgLogo"/>
                     <button className="buttonNav1">CONNEXION</button>
                 </div>
             </nav>

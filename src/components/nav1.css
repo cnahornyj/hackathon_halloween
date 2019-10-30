@@ -7,14 +7,12 @@ body {
     position: relative;
 }
 
-.pourAbsoluteP {
+.imgLogo {
     position: absolute;
-    left: 0;
-    font-family: 'jmh_horrorhorror';
-    font-size: 2em;
-    color: #E2E0E2;
-    margin: 20px 80px;
-
+    top: 30px;
+    width: 450px;
+    height: auto;
+    padding-left: 80px;
 }
 
 .buttonNav1 {
