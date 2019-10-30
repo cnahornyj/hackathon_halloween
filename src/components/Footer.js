@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import bg_footer from '../images/bg_footer.png';
+import bg_footer from '../img/bg_footer.png';
 
 
 class Footer extends Component {
