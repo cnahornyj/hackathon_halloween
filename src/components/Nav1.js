@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
-import { Container } from 'reactstrap';
 import bouton from '../img/bouton.png';
+import './nav1.css';
+import '../style.css';
+
+
 
 class Nav1 extends Component {
     constructor(props){
@@ -11,10 +14,10 @@ class Nav1 extends Component {
     render(){
         return(
             <nav>
-                <Container>
-                    <p>ADOPTE UN MONSTRE</p>
-                    <button><img src={bouton} alt="bouton de connexion"/></button>
-                </Container>
+                <div className="flexNav1">
+                    <p className="pourAbsoluteP">ADOPTE UN MONSTRE</p>
+                    <button className="buttonNav1">CONNEXION</button>
+                </div>
             </nav>
         )
     }
