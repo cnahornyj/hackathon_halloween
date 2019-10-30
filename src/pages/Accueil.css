@@ -1,0 +1,17 @@
+h1{
+    text-align :center;
+    margin : 0 auto;
+    padding-top : 80px;
+}
+
+#container1{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#container1 h1{
+    text-align : center;
+}
+
