@@ -10,10 +10,12 @@ class Nav1 extends Component {
 
     render(){
         return(
-            <Container>
-                <p>ADOPTE UN MONSTRE</p>
-                <button><img src={bouton} alt="bouton de connexion"/></button>
-            </Container>
+            <nav>
+                <Container>
+                    <p>ADOPTE UN MONSTRE</p>
+                    <button><img src={bouton} alt="bouton de connexion"/></button>
+                </Container>
+            </nav>
         )
     }
 }
