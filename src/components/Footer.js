@@ -13,7 +13,7 @@ class Footer extends Component {
             <footer>
                 <img src={bg-footer} alt="bg-footer" />
                 <div>
-                    <div></div>
+                    <div>icones réseaux sociaux</div>
                     <div>
                         <p>Mes monstres</p>
                         <p>Actu de l'horreur</p>
