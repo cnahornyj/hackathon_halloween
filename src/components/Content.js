@@ -10,19 +10,19 @@ class Accueil extends Component {
     return (
       <div>
         
-        <Container>
+        <Container className="header">
           <h1>ADOPTE UN MONSTRE</h1>
           <p> Le premier site de rencontre pour tous les amateurs de films d'horreurs</p>
           <button> Je m'inscris </button>
           </Container>
 
-        <Container>
+        <Container className="image">
           <img src="#" alt="img1"></img>
           <img src="#" alt="img2"></img>
           <img src="#" alt="img3"></img>
           </Container>
 
-        <Container>
+        <Container className="part">
           <h3> Nos partenaires </h3>
        
             <Card inverse>
@@ -55,18 +55,9 @@ class Accueil extends Component {
             </Card>
             </Container>
       
-          <Container className="partners">
-        <div className="partners">
-        <Row>
-        <Col xs="6">.col-6</Col>
-        <Col xs="6">.col-6</Col>
-        </Row>
-        </Container>
+        
     
     <Container>
-     
-      
-      
       <Row>
         <Col xs="6" sm="4">.col-6 .col-sm-4</Col>
         <Col xs="6" sm="4">.col-6 .col-sm-4</Col>
@@ -81,35 +72,22 @@ class Accueil extends Component {
         <Col sm={{ size: 'auto', offset: 1 }}>.col-sm-auto .offset-sm-1</Col>
         <Col sm={{ size: 'auto', offset: 1 }}>.col-sm-auto .offset-sm-1</Col>
       </Row>
-
-  );
-}
+      </Container>
 
 
-	<h2>Nos partenaires</h2>
+<Container className="gallery">
 
-		<div className="gallery">
 			<img  src="" alt=""></img>
 			<img src="" alt=""></img>
 			<img src="" alt=""></img>
 			<img src="" alt=""></img>
 			<img src="" alt=""></img>
-		</div>
+      </Container>
+
+
 </div>
-	</div>
-</div>
-
-
-
-
-
-
-
-
-
-   
     )
-  }
+    }
 }
 
 export default Accueil;

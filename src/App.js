@@ -9,6 +9,7 @@ class App extends Component {
     return(
       <div>
        <PopupMatch/>
+        <Accueil/>
       </div>
     )
   }
