@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import bg_footer from '../img/bg_footer.png';
-
+import { Container } from 'reactstrap';
+import bouton from '../img/bouton.png';
 
 class Nav1 extends Component {
     constructor(props){
@@ -10,9 +10,10 @@ class Nav1 extends Component {
 
     render(){
         return(
-            <div>
-                
-            </div>
+            <Container>
+                <p>ADOPTE UN MONSTRE</p>
+                <button><img src={bouton} alt="bouton de connexion"/></button>
+            </Container>
         )
     }
 }
