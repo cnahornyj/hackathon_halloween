@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Content  from '../components/Content'
-import './Content.css';
+
 
 
 
