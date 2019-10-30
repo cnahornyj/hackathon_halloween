@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* .flexNav1 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+} */
+
+.flexNav1 {
+    position: relative;
+}
+
+.pourAbsoluteP {
+    position: absolute;
+    left: 0;
+    font-family: 'jmh_horrorhorror';
+    font-size: 2em;
+    color: #E2E0E2;
+    margin: 20px 80px;
+
+}
+
+.buttonNav1 {
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    background-image: url("../img/bouton.png");
+    font-family: 'jmh_horrorhorror';
+    font-size: 1.5em;
+    background-repeat: no-repeat;
+    border: none;
+    margin-right: 80px;
+    margin-top: 50px;
+    width: 200px;
+    height: 95px;
+}
+
+.navNav1 {
+    height: 100px;
+    margin: 0;
+    background-color:  #1C051C;
+}

@@ -119,7 +119,7 @@ class Formulaire extends React.Component {
         </Input>
       </FormGroup>
     </Form>
-    
+
     {this.state.movies ? (
           <DisplayMovies movies={this.state.movies} />
         ) : (
