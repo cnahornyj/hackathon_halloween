@@ -1,10 +1,16 @@
-import React from 'react';
+import React,{ Component} from 'react';
+import Accueil from './pages/Accueil';
 
-function App() {
-  return (
-    <div>
-    </div>
-  );
+class App extends Component {
+   
+
+  render(){
+    return(
+      <Accueil/>
+    )
+  }
 }
 
 export default App;
+
+
