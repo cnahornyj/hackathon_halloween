@@ -1,0 +1,44 @@
+/* Feuille de style ListMatches */
+
+.list-matches .block {
+    margin-bottom: 30px;
+}
+
+.list-matches .pseudo {
+    font-family: 'jmh_horrorhorror';
+    color: #E54C84;
+    font-size: 1.5em;
+    letter-spacing: 0.04em;
+}
+
+.list-matches p {
+    margin-bottom: 0;
+}
+
+.buttons_matches {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.buttons_matches .no, .buttons_matches .yes {
+    border: none;
+    width: 70px;
+    height: 70px;
+} 
+
+.buttons_matches .no:focus, .buttons_matches .yes:focus, .buttons_matches .no:active, .buttons_matches .yes:active {
+    border: none;
+    box-shadow: none;
+    border-radius: 50px;
+    background-color: #1C051C;
+} 
+
+.buttons_matches .no {
+    background: url("../img/btn_no.png");
+} 
+
+.buttons_matches .yes {
+    background: url("../img/btn_yes.png");
+}

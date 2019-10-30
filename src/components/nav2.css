@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navNav2 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #E54C84;
+
+}
+
+.pNav2 {
+    font-family: 'jmh_horrorhorror';
+    font-size: 2em;
+    color: #E2E0E2;
+    margin-left: 80px;
+
+}
+
+.liNav2 {
+    color: #E2E0E2;
+
+}
+
+.ulNav2 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 80px;
+
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .navNav2 {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    .pNav2 {
+        margin: 0px;
+
+    }
+
+    .ulNav2 {
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+  }
+
+
+  @media screen and (max-width: 700px) {
+    .ulNav2 {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+
+
+    }
+
+  }
