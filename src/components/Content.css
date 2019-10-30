@@ -1,38 +1,119 @@
 h1{
     text-align :center;
     margin : 0 auto;
-    padding-top : 80px;
+    padding-top : 204px;
 }
 
-#container1{
+.header{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
+    background-color: #1C051C;
 }
 
-#container1 h1{
+h1{
+    padding-top : 50px;
+    text-align : center;
+    margin: 55px auto;
+    color : #6BF8AC;
+    
+
+}
+p {
+    font-size : 10px;
+    text-align : center;
+    color : white,
+}
+
+.header button {
+    margin-top : 40px;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    color : white;
+    background : #E54C84;
+    border-radius : 4px;
+    border-style: none;
+    margin-bottom: 80px;
+}
+.card {
+    display :flex;
+    padding-top : 50px;
+    margin-top : 40px;
+    border-radius: 20%;
+}
+.card-body{
+    padding : 30px;
+}
+.image .card-body {
+    height : 20px;
     text-align : center;
 }
 
-/*Nos Partenaires*/
+h3{
+    text-align : center;
+    padding : 5px;
+}
+.img1 {
+    width : 64px;
+    text-align : center;
+}
+.img2 {
+    width : 82px;
+    text-align : center;
+    margin : auto;
+}
+.img3 {
+    width : 94px;
+    text-align : center;
+}
+.suivre{
+    background-color: #1C051C;
+    margin-top : 10px;
+}
+.suivre .container{
+    padding-top: 60px;
+    display : flex;
+    align-items : center;
+    flex-direction : row;
+    background-color: #1C051C;
+}
 
-#partners {
-    padding: 100px 0;
+.partenaires .container{
+    flex-flow: row nowrap ;
+    align-items: center ;
+    justify-content: space-around ;
+    display: flex;
+    flex-direction: row;
+    min-width: 0;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding-top: 50px;
+}
+
+img {
+    display : inline-block;
+    margin : 0 auto;
+    vertical-align: middle;
+    border-style: none;
+    width: 105px;
+}
+
+.partenaires {
+   background-color : green;
+    padding: 75px 0;
+    padding-top: 76px;
     text-align: center;
 }
-#partners h2 {
-    text-transform: uppercase;
+
+.movie img {
+    display : inline-block;
+    padding : 10px;
 }
-#partners .gallery {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-around;
-}
-#partners .gallery img:first-child, #partners .gallery img:last-child  {
-    margin: 0
-}
-#partners .gallery img {
-    margin: 0 20px;
+h4 {
+    padding: 15px;
+    margin-bottom: 30px;
 }

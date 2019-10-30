@@ -1,93 +1,79 @@
 import React, { Component } from 'react';
-import { Card, CardTitle, CardText, CardImg, CardImgOverlay } from 'reactstrap';
+import { Card, CardBody, Button, CardTitle, CardText, CardImg } from 'reactstrap';
 import { Container, Row, Col } from 'reactstrap';
 import './Content.css';
-
+import '../style.css';
+import picto_trouvez from '../img/picto_trouvez.png'
+import picto_rencontrez from '../img/picto_rencontrez.png'
+import picto_suivez from '../img/picto_suivez.png'
 
 
 class Accueil extends Component {
   render() {
     return (
-      <div>
-        
+      <div className="content">
+
         <Container className="header">
+        <Col sm={4}>
           <h1>ADOPTE UN MONSTRE</h1>
           <p> Le premier site de rencontre pour tous les amateurs de films d'horreurs</p>
           <button> Je m'inscris </button>
-          </Container>
-
-        <Container className="image">
-          <img src="#" alt="img1"></img>
-          <img src="#" alt="img2"></img>
-          <img src="#" alt="img3"></img>
-          </Container>
-
-        <Container className="part">
-          <h3> Nos partenaires </h3>
-       
-            <Card inverse>
-              <CardImg width="100%" src="/assets/318x270.svg" alt="Card image cap" />
-              <CardImgOverlay>
-                <CardTitle>Card Title</CardTitle>
-                <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-                <CardText>
-                  <small className="text-muted">Last updated 3 mins ago</small>
-                </CardText>
-              </CardImgOverlay>
-            </Card>
-
-            <Card inverse>
-              <CardImg width="100%" src="/assets/318x270.svg" alt="Card image cap" />
-              <CardImgOverlay>
-                <CardTitle>Card Title</CardTitle>
-                <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-
-              </CardImgOverlay>
-            </Card>
-
-            <Card inverse>
-              <CardImg width="100%" src="/assets/318x270.svg" alt="Card image cap" />
-              <CardImgOverlay>
-                <CardTitle>Card Title</CardTitle>
-                <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-
-              </CardImgOverlay>
-            </Card>
-            </Container>
-      
-        
-    
-    <Container>
-      <Row>
-        <Col xs="6" sm="4">.col-6 .col-sm-4</Col>
-        <Col xs="6" sm="4">.col-6 .col-sm-4</Col>
-      </Row>
-      <Row>
-        <Col sm={{ size: 6, order: 2, offset: 1 }}>.col-sm-6 .order-sm-2 .offset-sm-1</Col>
-      </Row>
-      <Row>
-        <Col sm="12" md={{ size: 6, offset: 3 }}>.col-sm-12 .col-md-6 .offset-md-3</Col>
-      </Row>
-      <Row>
-        <Col sm={{ size: 'auto', offset: 1 }}>.col-sm-auto .offset-sm-1</Col>
-        <Col sm={{ size: 'auto', offset: 1 }}>.col-sm-auto .offset-sm-1</Col>
-      </Row>
-      </Container>
+          </Col>
+        </Container>
 
 
-<Container className="gallery">
 
-			<img  src="" alt=""></img>
-			<img src="" alt=""></img>
-			<img src="" alt=""></img>
-			<img src="" alt=""></img>
-			<img src="" alt=""></img>
-      </Container>
+        <Container className="suivre">
+        <Row>
+        <Col sm={4}>
+        <Card>
+            
+            <CardBody className="image">
+            <CardImg className ="img1"  src={picto_suivez}alt="" />
+              <h3>Suivez</h3>
+              <CardText>L'actualité des meilleurs films d'horreurs</CardText>
+            </CardBody>
+          </Card>
+          </Col>
+
+          <Col sm={4}>
+          <Card>
+            <CardBody className="image">
+            <CardImg className ="img2" src = {picto_trouvez}alt="" />
+              <h3>Trouver</h3>
+              <CardText>L'actualité des meilleurs films d'horreurs</CardText>
+            </CardBody>
+          </Card>
+          </Col>
+
+          <Col sm={4}>
+          <Card>
+            <CardBody className="image">
+            <CardImg className ="img3" src = {picto_rencontrez}alt="" />
+              <h3>Rencontrez </h3>
+              <CardText>Les monstres dans des lieux insolites</CardText>
+            </CardBody>
+          </Card>
+          </Col>
+
+         
+        </Row>
+        </Container>
+
+          
+      <Container className="partenaires">
+      <h4> Nos partenaires</h4>
+        <div className = "movie">
+          <img src="https://zupimages.net/up/19/44/ecah.jpg" alt="netflix"></img>
+          <img src="https://c7.uihere.com/files/369/573/203/pathe-cordeliers-pathe-vaise-pathe-bellecour-cinema-digest-thumb.jpg" alt="pathe"></img>
+          <img src="https://upload.wikimedia.org/wikipedia/fr/1/1f/Gaumont_1995.svg" alt="gaumont"></img>
+          </div>
+        </Container>
 
 
-</div>
+      </div>
     )
-    }
+  }
 }
 
 export default Accueil;
