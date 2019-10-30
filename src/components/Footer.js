@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import bg_footer from '../images/bg_footer.png';
+import bg_footer from '../img/bg_footer.png';
 
 
 class Footer extends Component {
@@ -11,7 +11,7 @@ class Footer extends Component {
     render(){
         return(
             <footer>
-                <img src={bg-footer} alt="bg-footer" />
+                <img src={bg_footer} alt="bg-footer" />
                 <div>
                     <div>icones réseaux sociaux</div>
                     <div>
