@@ -32,33 +32,15 @@ class PopupMatch extends React.Component {
           <ReactModal  
              isOpen={this.state.showModal} 
           >
-            <p class="match">It's a Match!</p>
+            <p class="match">It's a Monster Match!</p>
             <Row>
               <Col md={{ span: 3, offset: 3 }}>
-                <Card style={{ width: '22rem', backgroundColor: '#65A95D' }}>
                   <Card.Img variant="top" class="img" src="https://i.frg.im/u4tvA62n/bmatb72535_600.jpg?v=1528286304.147" />
-                  <Card.Body>
-                    <Card.Title style={{ textAlign: "center" }}>Psedo</Card.Title>
-                    <Card.Text>
-                      <p>Age: 34 ans</p>
-                      <p>Sex: masculin</p> 
-                      <p>Film préféré: Hereditary, Blood Island, Saw</p>
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
+                  <Card.Title>Psedo</Card.Title>
               </Col>
               <Col md={{ span: 3, offset: 1 }}>
-                <Card style={{ width: '22rem',backgroundColor: '#65A95D' }}>
                   <Card.Img variant="top" class="img" src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/14199781_580940452107770_8225117799363717883_n.jpg?_nc_cat=100&_nc_oc=AQmDRUZuMw5_7L18PNfjyZIdBI9yKy2Qkq52QjIEGneoWL6LUgDzp30mJpkdhOtMJAE&_nc_ht=scontent-cdt1-1.xx&oh=9b6f420dc14fa46b1e02bd7a7144ef04&oe=5E5AB344" />
-                  <Card.Body>
-                    <Card.Title style={{ textAlign: "center" }}>Psedo</Card.Title>
-                    <Card.Text>
-                      <p>Age: 29 ans</p>
-                      <p>Sex: féminin</p> 
-                      <p>Film préféré: Hereditary, Blood Island, Saw</p>
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
+                  <Card.Title>Psedo</Card.Title>          
               </Col>
             </Row>
               <h2 style={{ textAlign: "center" }}>Choisie ton lieux de rencontre</h2>
@@ -70,8 +52,6 @@ class PopupMatch extends React.Component {
                     <Card.Title style={{ textAlign: "center" }}>cimetière</Card.Title>
                     <Card.Text>
                       <p>Age: 29 ans</p>
-                      <p>Sex: féminin</p> 
-                      <p>Film préféré: Hereditary, Blood Island, Saw</p>
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -83,8 +63,6 @@ class PopupMatch extends React.Component {
                     <Card.Title style={{ textAlign: "center" }}>scene de crime</Card.Title>
                     <Card.Text>
                       <p>Age: 29 ans</p>
-                      <p>Sex: féminin</p> 
-                      <p>Film préféré: Hereditary, Blood Island, Saw</p>
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -96,8 +74,6 @@ class PopupMatch extends React.Component {
                     <Card.Title style={{ textAlign: "center" }}>morgue</Card.Title>
                     <Card.Text>
                       <p>Age: 29 ans</p>
-                      <p>Sex: féminin</p> 
-                      <p>Film préféré: Hereditary, Blood Island, Saw</p>
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -109,14 +85,11 @@ class PopupMatch extends React.Component {
                     <Card.Title style={{ textAlign: "center" }}>abatoire</Card.Title>
                     <Card.Text>
                       <p>Age: 29 ans</p>
-                      <p>Sex: féminin</p> 
-                      <p>Film préféré: Hereditary, Blood Island, Saw</p>
                     </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
-            </Row>  
-
+            </Row> 
 
             <button onClick={this.handleCloseModal} class="button">Continue</button>
           </ReactModal>
