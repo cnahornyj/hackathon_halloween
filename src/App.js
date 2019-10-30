@@ -9,7 +9,6 @@ class App extends Component {
     return(
       <div>
         <Accueil/>
-        <Footer />
       </div>
     )
   }

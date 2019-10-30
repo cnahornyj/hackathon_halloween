@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.imgInclineeFooter {
+    height: 50px;
+    width: 100%;
+}
+
+.flexReseauxSociaux {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+
+.pourFlex {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: center;
+
+}
+
+footer {
+    background-color:  #1C051C;
+    padding-bottom: 20px;
+}
+
+.cssDesLiens {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #E2E0E2;
+    margin: 0 0 40px 0;
+    font-size: 1.2em;
+}
+
+li {
+    list-style-type: none;
+    font-family: 'jmh_horrorhorror'
+
+}
+
+.cssImgIcones {
+    width: 100px;
+    height: auto;
+}
