@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import bouton from '../img/bouton.png';
 import './nav1.css';
 import '../style.css';
 
@@ -13,7 +12,7 @@ class Nav1 extends Component {
 
     render(){
         return(
-            <nav>
+            <nav className="navNav1">
                 <div className="flexNav1">
                     <p className="pourAbsoluteP">ADOPTE UN MONSTRE</p>
                     <button className="buttonNav1">CONNEXION</button>

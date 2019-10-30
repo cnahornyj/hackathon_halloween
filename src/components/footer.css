@@ -38,12 +38,11 @@ footer {
     align-items: center;
     color: #E2E0E2;
     margin: 0 0 40px 0;
-    font-size: 1.2em;
 }
 
 li {
     list-style-type: none;
-    font-family: 'jmh_horrorhorror'
+    font-family: 'open_sansregular';
 
 }
 
