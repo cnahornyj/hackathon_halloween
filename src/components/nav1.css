@@ -3,14 +3,6 @@ body {
     padding: 0;
 }
 
-/* .flexNav1 {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-} */
-
 .flexNav1 {
     position: relative;
 }
@@ -43,5 +35,35 @@ body {
 .navNav1 {
     height: 100px;
     margin: 0;
-    background-color:  #1C051C;
+    background-color:  #E54C84;
+}
+
+
+  @media screen and (max-width: 700px) {
+
+    .navNav1 {
+    height: 140px;
+
+    }
+
+    .buttonNav1 {
+
+    margin-top: 90px;
+
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .navNav1 {
+        height: 180px;
+    
+        }
+    
+        .buttonNav1 {
+    
+        margin-top: 130px;
+    
+        }
 }

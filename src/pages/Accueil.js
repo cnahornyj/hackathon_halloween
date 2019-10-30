@@ -11,6 +11,7 @@ class Accueil extends Component {
   render() {
     return (
       <div>
+        <Nav2 />
         <Nav1 />
         <Content/>
         <Footer />
