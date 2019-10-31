@@ -46,7 +46,7 @@ class Accueil extends Component {
           <Card>
             <CardBody className="image">  
             <CardImg className ="img2" src = {picto_trouvez}alt="" />
-              <h3>Trouver</h3>
+              <h3>Trouvez</h3>
               <CardText>L'âme soeur en quelques heures</CardText>
             </CardBody>
           </Card>
