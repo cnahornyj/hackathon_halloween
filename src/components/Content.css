@@ -2,14 +2,20 @@
     background-color: #1C051C;  
 }
 /*Le centre de la pae */
-.header{
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-around;
+.background_header .header {
     background-color: #1C051C;
 }
 
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1C051C;
+}
+.accueil{
+    background-color: #1C051C;
+}
 h1{
     padding-top : 50px;
     text-align : center;
@@ -20,33 +26,51 @@ h1{
     padding-top : 204px;
 }
 p {
-    font-size : 10px;
+    font-size : 15px;
     text-align : center;
+    padding : 22px;
     color : white,
 }
 
 .header button {
     margin-top : 40px;
+    display: block;
     margin: auto;
     padding: 10px;
-    width: 100%;
+    width: 80%;
     color : white;
     background : #E54C84;
     border-radius : 4px;
     border-style: none;
     margin-bottom: 80px;
 }
-
+/*Image du Footer*/
+.img_footer{
+    padding: 50px;
+    width :89%;
+}
 /*Suivez-Trouver-Rencontrer*/
+.circle{
+    background: white;
+    height: 98px;
+    border-style: 3px solid black;
+    border-radius: 50%;
+    width: 100px;
+}
 .card {
     display :flex;
     padding-top : 50px;
-    margin-top : 40px;
+    margin-top : 20px;
     border-radius: 20%;
     background-color: #1C051C;
+    margin-bottom: 20px;
+    height : 319px;
 }
 .card-body{
-    padding : 30px;
+    padding: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 p {
     color : white;
@@ -54,6 +78,7 @@ p {
 .image .card-body {
     height : 20px;
     text-align : center;  
+    padding : 10px;
 }
 
 h3{
@@ -64,22 +89,29 @@ h3{
 .img1 {
     width : 64px;
     text-align : center;
+    margin-left: 15px;
 }
 .img2 {
-    width : 82px;
-    text-align : center;
-    margin : auto;
+    width: 68px;
+    text-align: center;
+    margin-left: 15px;
+    padding-top: 10px;
 }
 .img3 {
     width : 94px;
     text-align : center;
+    margin-left: 8px;
+    padding-top: 10px;
 }
 .suivre{
     background-color: #1C051C;
     margin-top : 10px;
+    height:473px;
 }
 .suivre .container{
+    height :150px;
     padding-top: 60px;
+    margin-bottom: 25px;
     display : flex;
     align-items : center;
     flex-direction : row;
@@ -107,7 +139,7 @@ h3{
     padding-top: 50px;
 }
 
-img {
+.img_movie {
     display : inline-block;
     margin : 0 auto;
     vertical-align: middle;
@@ -116,15 +148,16 @@ img {
 }
 
 .partenaires {
-   background-color : green;
+   background-color : white;
     padding: 75px 0;
     padding-top: 76px;
     text-align: center;
 }
 
-.movie img {
-    display : inline-block;
-    padding : 10px;
+.movie .img_movie{
+    display: inline-block;
+    padding: 5px;
+    margin: 20px;
 }
 h4 {
     font-family: 'jmh_horrorhorror';
