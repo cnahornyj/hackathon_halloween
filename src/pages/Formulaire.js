@@ -1,9 +1,11 @@
 import React from 'react';
-import { Container, Row, Form, FormGroup, Label, Input, Col } from 'reactstrap';
+import { Container, Row, Form, FormGroup, Label, Input, Col, Button } from 'reactstrap';
 import DisplayMovies from '../components/DisplayMovies';
 import axios from "axios";
 import Nav2  from '../components/Nav2'
-import '../components/Formulaire.css'
+import '../components/DisplayMovies'
+import '../components/DisplayMovies.css'
+
 
 
 class Formulaire extends React.Component {
@@ -110,7 +112,7 @@ class Formulaire extends React.Component {
             <legend className="col-form-label">Je recherche :</legend>
             <Row>
             <Col>
-              <FormGroup check>
+              <FormGroup check>import '../components/DisplayMovies'
                 <Label check>
                   <Input type="radio" name="radio2" />{' '}
                   Un homme
@@ -176,16 +178,16 @@ class Formulaire extends React.Component {
       </Container>
       </div>
       {this.state.movies ? (
-            <DisplayMovies movies={this.state.movies} />
+            <DisplayMovies className="movies_picture" movies={this.state.movies} />
           ) : (
             <p>No data yet</p>
           )}
+          <Button className="btn-primary">envoyé</Button>
     </div>
 
 
     );
   }
 }
-
 
 export default Formulaire
