@@ -1,0 +1,14 @@
+.submit .btn-secondary  {
+    background: url("../img/btn_submit.png") no-repeat;
+    width: 180px;
+    height: 72px;
+    background-color: transparent;
+    display: block;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'jmh_horrorhorror';
+    color: #1C051C;
+    font-size: 1.5em;
+    margin: 0 auto;
+}
