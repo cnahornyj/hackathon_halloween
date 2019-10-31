@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import '../style.css';
 import './nav2.css';
 import { NavLink } from 'reactstrap';
+import logo from '../img/logo.png';
 
 
 
@@ -15,7 +16,7 @@ class Nav2 extends Component {
     render(){
         return(
             <nav className="navNav2">
-                <p className="pNav2">ADOPTE UN MONSTRE</p>
+                <img src={logo} className="imgLogoNav2"/>
                 <ul className="ulNav2">
                     <li className="liNav2"><NavLink>MES MONSTRES</NavLink></li>
                     <li className="liNav2"><NavLink>ACTU DE L'HORREUR</NavLink></li>
