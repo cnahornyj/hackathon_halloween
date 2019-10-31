@@ -7,10 +7,10 @@ import '../style.css';
 import love_skull from '../img/love_skull.png'
 
 class PopupMatch extends React.Component {
-    constructor () {
-      super();
+    constructor(props) {
+      super(props);
       this.state = {
-        showModal: false
+        showModal: true
       };
       
       this.handleOpenModal = this.handleOpenModal.bind(this);
@@ -23,12 +23,12 @@ class PopupMatch extends React.Component {
     
     handleCloseModal () {
       this.setState({ showModal: false });
+      this.props.resetOpenModal();
     }
     
-    render () {
+    render() {
       return (
         <div>
-          <button onClick={this.handleOpenModal}>toto</button>
           
           <ReactModal 
              style={{content: {backgroundColor: '#1C051C' }}}

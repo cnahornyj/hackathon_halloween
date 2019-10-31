@@ -1,11 +1,9 @@
 import React from 'react';
 import './Formulaire.css';
-import { Form, FormGroup, Label, Input, Col } from 'reactstrap';
+import { Form, FormGroup, Label, Input, Col,Container } from 'reactstrap';
 import DisplayMovies from '../components/DisplayMovies';
 import axios from "axios";
 import Nav2  from '../components/Nav2'
-import { Row } from 'react-bootstrap';
-
 
 
 class Formulaire extends React.Component {
@@ -22,39 +20,43 @@ class Formulaire extends React.Component {
   }
 
   getMovies() {
-    // Send the request
     axios
       .get("https://hackathon-wild-hackoween.herokuapp.com/movies")
-      // Extract the DATA from the received response
       .then(response => response.data)
-      // Use this data to update the state
       .then(data => {
-        console.log(data.movies);
-        this.setState({
-          movies: data.movies[23]
+        this.setState({ 
+          movies: data.movies[8],
         });
       });
   }
+
+
 
   render(){
   return (
     <div>
       <Nav2 />
-      <Form>
+     
+      <Form> 
+      <Container>
         <h1>créez votre compte</h1>
         <FormGroup>
           <Label for="exampleEmail">Choisissez mon monsters avatar :</Label>
           <Input type="textarea" name="text" id="exampleText" />
         </FormGroup>
+      </Container>
 
-        <FormGroup>
-          <Label for="exampleEmail">Pseudo :</Label>
-          <Input type="textarea" name="text" id="exampleText" />
-        </FormGroup>
-         
+      <Container style={{ marginRight: "10px"}} >
+        <Col>
+          <FormGroup>
+            <Label for="exampleEmail">Pseudo :</Label>
+            <Input type="textarea" name="text" id="exampleText" style={{ borderRadius: "40px", width: "700px" }}/>
+          </FormGroup>
+        </Col> 
+
+        <Col style={{ display: "" }}>
         <FormGroup tag="fieldset">
           <legend className="col-form-label col-sm-2">Je suis :</legend>
-          <Col> 
             <FormGroup check >
               <Label check>
                 <Input type="radio" name="radio2" />{' '}
@@ -67,13 +69,12 @@ class Formulaire extends React.Component {
                 Une femme
               </Label>
             </FormGroup>
-          </Col>
-        </FormGroup>
+        </FormGroup>  
+        </Col>
     
-
+        <Col>
         <FormGroup tag="fieldset" >
           <legend className="col-form-label col-sm-2">Je recherche :</legend>
-          <Col>
             <FormGroup check>
               <Label check>
                 <Input type="radio" name="radio2" />{' '}
@@ -92,12 +93,13 @@ class Formulaire extends React.Component {
                 Les deux
               </Label>
             </FormGroup>
-          </Col>
         </FormGroup>
+        </Col>
 
+        <Col>
         <FormGroup>
           <Label for="exampleEmail">Mon âge :</Label>
-          <Input type="select" name="select" id="exampleSelect">
+          <Input type="select" name="select" id="exampleSelect" style={{ borderRadius: "40px",  width: "700px" }}>
           <option>Entre 18 et 29 ans</option>
           <option>Entre 30 et 44 ans</option>
           <option>Entre 45 et 59 ans</option>
@@ -108,7 +110,7 @@ class Formulaire extends React.Component {
 
         <FormGroup>
           <Label for="exampleEmail">Mon type de films d’horreurs préféré :</Label>
-          <Input type="select" name="select" id="exampleSelect">
+          <Input type="select" name="select" id="exampleSelect" style={{ borderRadius: "40px",  width: "700px" }}>
           <option>Bogeyman</option>
           <option>Comédie horrifique</option>
           <option>Epouvante</option>
@@ -125,14 +127,16 @@ class Formulaire extends React.Component {
           <option>Zombie</option>
           </Input>
         </FormGroup>
-      </Form>
+        </Col>
+      </Container>
+    </Form>
+
 
       {this.state.movies ? (
             <DisplayMovies movies={this.state.movies} />
           ) : (
             <p>No data yet</p>
           )}
-
     </div>
 
     );
