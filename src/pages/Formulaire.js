@@ -23,17 +23,26 @@ class Formulaire extends React.Component {
     this.getAvatars();
   }
 
+
+  getRandomInt =(max) => {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+  
+  listFilm = (data) => {
+  const board = [];  
+  for (let i = 0; i < 8; i++){
+    board.push(data.movies[i])
+  } 
+  return board 
+}
+
   getMovies() {
-    // Send the request
     axios
       .get("https://hackathon-wild-hackoween.herokuapp.com/movies")
-      // Extract the DATA from the received response
       .then(response => response.data)
-      // Use this data to update the state
       .then(data => {
-        console.log(data.movies);
-        this.setState({
-          movies: data.movies[23]
+        this.setState({ 
+          movies: this.listFilm(data),
         });
       });
   }
@@ -171,8 +180,8 @@ class Formulaire extends React.Component {
           ) : (
             <p>No data yet</p>
           )}
-
     </div>
+
 
     );
   }

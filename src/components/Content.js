@@ -30,14 +30,14 @@ class Accueil extends Component {
         <img className="img_footer" src= {bg_footer2}></img>
         </div>
 
+
         <div className="accueil">
         <Container className="suivre">
         <Row>
         <Col sm={4}>
-        <Card>
-            
+        <Card>  
             <CardBody className="image">
-            <div className = "circle">
+            <div >
             <CardImg className ="img1"  src={picto_suivez}alt="" />
             </div>
               <h3>Suivez</h3>
@@ -49,7 +49,7 @@ class Accueil extends Component {
           <Col sm={4}>
           <Card>
             <CardBody className="image">
-              <div className = "circle">
+              <div >
             <CardImg className ="img2" src = {picto_trouvez}alt="" />
             </div>
               <h3>Trouver</h3>
@@ -61,7 +61,7 @@ class Accueil extends Component {
           <Col sm={4}>
           <Card>
             <CardBody className="image">
-            <div className = "circle">
+            <div  >
             <CardImg className ="img3" src = {picto_rencontrez}alt="" />
             </div>
               <h3>Rencontrez </h3>

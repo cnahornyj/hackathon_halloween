@@ -4,7 +4,7 @@ import '../style.css'
 import { Container, Row } from 'react-bootstrap'
 import Nav2  from '../components/Nav2'
 import Footer  from '../components/Footer'
-
+ 
 
 const allProfiles = [
     {
