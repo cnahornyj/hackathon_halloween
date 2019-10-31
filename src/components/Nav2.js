@@ -19,6 +19,7 @@ class Nav2 extends Component {
 
         const styleLink= {
             color: "#E2E0E2",
+            textDecoration: "none",
         }
 
         return(
