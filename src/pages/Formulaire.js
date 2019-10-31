@@ -12,6 +12,7 @@ class Formulaire extends React.Component {
     super(props);
     this.state = {
       pseudo: "Little witches",
+      rememberMe: false,
       movies: null,
       monsters : [0]
     };
@@ -24,8 +25,11 @@ class Formulaire extends React.Component {
   componentDidMount() {
     this.getMovies();
     this.getAvatars();
+  
+    const rememberMe = localStorage.getItem('rememberMe') === 'true';
+    const pseudo = rememberMe ? localStorage.getItem('pseudo') : '';
+    this.setState({ pseudo, rememberMe });
   }
-
 
   getRandomInt =(max) => {
     return Math.floor(Math.random() * Math.floor(max));
@@ -72,6 +76,21 @@ class Formulaire extends React.Component {
   handleChange(event){
     this.setState({ pseudo : event.target.value });
 }
+
+
+
+handleChange = (event) => {
+  const input = event.target;
+  const value = input.type === 'checkbox' ? input.checked : input.value;
+
+  this.setState({ [input.name]: value });
+};
+handleFormSubmit = () => {
+  const { pseudo, rememberMe } = this.state;
+  localStorage.setItem('rememberMe', rememberMe);
+  localStorage.setItem('user', rememberMe ? this.state.pseudo : '');
+};
+
 
   render(){
   const styleH1Pseudo = {
@@ -191,6 +210,10 @@ class Formulaire extends React.Component {
             <Label>Ma description</Label>
             <Input type="textarea" />
           </FormGroup>
+          <label>
+          <input name="rememberMe" checked={this.state.rememberMe} onChange={this.handleChange} type="checkbox" /> Remember me
+        </label>
+        <button type="submit">Sign In</button>
           </Col>
           </Row>
         </Form>
