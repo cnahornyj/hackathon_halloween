@@ -8,37 +8,37 @@ import Footer  from '../components/Footer'
 
 const allProfiles = [
     {
-        avatar: '',
+        avatar: 'https://nsa40.casimages.com/img/2019/10/23/191023045324113034.jpg',
         pseudo:'Draculito',
         age:'19 ans',
         preferences:'#Snuff movie'
     },
     {
-        avatar: '',
+        avatar: 'https://nsa40.casimages.com/img/2019/10/23/191023045322835216.jpg',
         pseudo:'Freddy',
         age:'33 ans',
         preferences:'#Thriller'
     },
     {
-        avatar: '',
+        avatar: 'https://nsa40.casimages.com/img/2019/10/23/191023045324909292.jpg',
         pseudo:'Vendredi 13',
         age:'25 ans',
         preferences:'#Survival'
     },
     {
-        avatar: '',
+        avatar: 'https://nsa40.casimages.com/img/2019/10/23/191023045324363050.jpg',
         pseudo:'Kraken',
         age:'27 ans',
         preferences:'#Survival'
     },
     {
-        avatar: '',
+        avatar: 'https://nsa40.casimages.com/img/2019/10/23/191023045324608875.jpg',
         pseudo:'Gregorheur',
         age:'77 ans',
         preferences:'#Rape and revenge'
     },
     {
-        avatar: '',
+        avatar: 'https://nsa40.casimages.com/img/2019/10/23/191023045326178266.png',
         pseudo:'Ursula',
         age:'29 ans',
         preferences:'#Snuff movie'

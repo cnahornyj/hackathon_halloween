@@ -39,7 +39,7 @@ class Formulaire extends React.Component {
   
   listFilm = (data) => {
   const board = [];  
-  for (let i = 0; i < 8; i++){
+  for (let i = 0; i < 9; i++){
     board.push(data.movies[i])
   } 
   return board 
