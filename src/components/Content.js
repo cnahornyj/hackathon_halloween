@@ -26,15 +26,17 @@ class Accueil extends Component {
         </Container>
         </div>
 
+        <Col sm={4}>
         <div>
         <img className="bg_footer" src= {bg_footer2}></img>
         </div>
+        </Col>
+
         
         <div className="accueil2">
         <Container className="suivre">
         <Row>
         <Col sm={4}>
-        
         <Card>
             <CardBody className="image">
             <CardImg className ="img1"  src={picto_suivez}alt="" />
@@ -66,9 +68,9 @@ class Accueil extends Component {
         </Row>
         </Container>
         </div>
-          
-      <Container className="partenaires">
+
   
+      <Container className="partenaires">
       <h4> Nos partenaires</h4>
         <div className = "movie">
           <img className="img_movie" src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c529.png" alt="netflix"></img>
@@ -76,10 +78,8 @@ class Accueil extends Component {
           <img className="img_movie" src="https://upload.wikimedia.org/wikipedia/fr/thumb/f/f8/Path%C3%A9_Logo.svg/1280px-Path%C3%A9_Logo.svg.png" alt="pathe"></img>
           <img className="img_movie" src="https://files.slack.com/files-pri/T6SG2QGG2-FQ1JDMU4F/la-nuit-de-l_horreur.png" alt="pathe"></img>
           </div>
-     
         </Container>
-
-
+   
       </div>
     )
   }

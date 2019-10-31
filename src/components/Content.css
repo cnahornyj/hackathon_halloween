@@ -125,9 +125,7 @@
 h3{
     font-family: 'jmh_horrorhorror';
 }
-.circle {
-    border-style: 1px solid white;
-}
+
 
 /*Les Partenaires*/
 .partenaires .container{
@@ -169,3 +167,17 @@ h4 {
     padding: 15px;
     margin-bottom: 30px;
 }
+
+@media screen and (max-width: 420px){
+  
+    .card{
+        margin-top: 20px;
+        margin: auto;
+        width: 68%;
+        height: 330px;
+    }
+        .accueil2{
+            height : 70%;
+            background-color: #1C051C;
+        }
+    }
