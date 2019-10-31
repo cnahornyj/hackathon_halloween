@@ -44,9 +44,6 @@ class ProfilesCard extends Component {
             </Fragment>
         );
     }
-
 }
-
-
 
 export default ProfilesCard 

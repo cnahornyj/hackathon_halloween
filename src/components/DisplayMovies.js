@@ -2,13 +2,15 @@ import React from 'react';
 
 function DisplayMovies({movies}){
     return(
-        <div className="DisplayMovies">
-            <img src={movies.posterUrl} alt="poster"/>
-            <h1>{movies.title}</h1>
-            <h2>{movies.director}</h2>
-            <h3>{movies.year}</h3>
-            <p>{movies.country}</p>
-        </div>
+        movies.map((movie, index) => (
+            <div key={index} className="DisplayMovies">
+                <img src={movie.posterUrl} alt="poster"/>
+                <h1>{movie.title}</h1>
+                <h2>{movie.director}</h2>
+                <h3>{movie.year}</h3>
+                <p>{movie.country}</p>
+            </div>
+        ))
     );
 };
 

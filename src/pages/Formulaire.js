@@ -10,14 +10,27 @@ class Formulaire extends React.Component {
   constructor () {
     super();
     this.state = {
-      movies: null
+      movies: null,
     };
-    this.getMovies = this.getMovies.bind(this);
+    this.getMovies = this.getMovies.bind(this); 
   }
 
   componentDidMount() {
     this.getMovies();
   }
+
+
+  getRandomInt =(max) => {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+  
+  listFilm = (data) => {
+  const board = [];  
+  for (let i = 0; i < 8; i++){
+    board.push(data.movies[i])
+  } 
+  return board 
+}
 
   getMovies() {
     axios
@@ -25,18 +38,17 @@ class Formulaire extends React.Component {
       .then(response => response.data)
       .then(data => {
         this.setState({ 
-          movies: data.movies[8],
+          movies: this.listFilm(data),
         });
       });
   }
-
 
 
   render(){
   return (
     <div>
       <Nav2 />
-     
+
       <Form> 
       <Container>
         <h1>créez votre compte</h1>
@@ -131,13 +143,13 @@ class Formulaire extends React.Component {
       </Container>
     </Form>
 
-
       {this.state.movies ? (
             <DisplayMovies movies={this.state.movies} />
           ) : (
             <p>No data yet</p>
           )}
     </div>
+
 
     );
   }

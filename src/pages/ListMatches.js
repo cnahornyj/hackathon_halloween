@@ -3,7 +3,6 @@ import ProfilesCard from '../components/ProfilesCard'
 import '../style.css'
 import { Container, Row } from 'react-bootstrap'
 import Nav2  from '../components/Nav2'
-import PopupMatch from '../components/PopupMatch'
 import Footer  from '../components/Footer'
  
 
