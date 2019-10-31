@@ -40,14 +40,14 @@ class PopupMatch extends React.Component {
             <Row style={{ alignItems: "center" }}>
               <Col sm={4} style={{ textAlign:"center" }}>
                 <Card.Img variant="top" class="img" src="https://i.frg.im/u4tvA62n/bmatb72535_600.jpg?v=1528286304.147" />
-                <Card.Title style={{ color:"#E54C84", fontFamily: 'jmh_horrorhorror', fontSize: "2em" }}>Medusa</Card.Title>
+                <Card.Title style={{ color:"#E54C84", fontFamily: 'jmh_horrorhorror', fontSize: "2em" }}>Gregorheur</Card.Title>
               </Col>
               <Col sm={4} style={{ textAlign:"center" }}> 
                 <Card.Img variant="top" style={{ width: "80px", height: "83px" }} src={love_skull} />
               </Col>
               <Col sm={4} style={{ textAlign:"center" }}>
                 <Card.Img variant="top" class="img" src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/14199781_580940452107770_8225117799363717883_n.jpg?_nc_cat=100&_nc_oc=AQmDRUZuMw5_7L18PNfjyZIdBI9yKy2Qkq52QjIEGneoWL6LUgDzp30mJpkdhOtMJAE&_nc_ht=scontent-cdt1-1.xx&oh=9b6f420dc14fa46b1e02bd7a7144ef04&oe=5E5AB344" />
-                <Card.Title style={{ color:"#E54C84", fontFamily: 'jmh_horrorhorror', fontSize: "2em"  }}>Gregorheur</Card.Title>          
+                <Card.Title style={{ color:"#E54C84", fontFamily: 'jmh_horrorhorror', fontSize: "2em"  }}>Medusa</Card.Title>          
               </Col>
             </Row>
          </Container> 
