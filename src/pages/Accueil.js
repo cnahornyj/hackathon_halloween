@@ -7,7 +7,6 @@ import Nav2  from '../components/Nav2'
 
 
 
-
 class Accueil extends Component {
   render() {
     return (
