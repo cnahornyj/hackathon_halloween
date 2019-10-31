@@ -28,7 +28,7 @@ class PopupMatch extends React.Component {
     render () {
       return (
         <div>
-          <button onClick={this.handleOpenModal}></button>
+          <button onClick={this.handleOpenModal}>toto</button>
           
           <ReactModal 
              style={{content: {backgroundColor: '#1C051C' }}}

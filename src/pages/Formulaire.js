@@ -1,8 +1,11 @@
 import React from 'react';
+import './Formulaire.css';
 import { Form, FormGroup, Label, Input, Col } from 'reactstrap';
 import DisplayMovies from '../components/DisplayMovies';
 import axios from "axios";
 import Nav2  from '../components/Nav2'
+import { Row } from 'react-bootstrap';
+
 
 
 class Formulaire extends React.Component {
@@ -38,8 +41,9 @@ class Formulaire extends React.Component {
     <div>
       <Nav2 />
       <Form>
+        <h1>créez votre compte</h1>
         <FormGroup>
-          <Label for="exampleEmail">Choisissez votre avatar monstre :</Label>
+          <Label for="exampleEmail">Choisissez mon monsters avatar :</Label>
           <Input type="textarea" name="text" id="exampleText" />
         </FormGroup>
 
@@ -47,11 +51,11 @@ class Formulaire extends React.Component {
           <Label for="exampleEmail">Pseudo :</Label>
           <Input type="textarea" name="text" id="exampleText" />
         </FormGroup>
-        
-        <FormGroup tag="fieldset" row>
+         
+        <FormGroup tag="fieldset">
           <legend className="col-form-label col-sm-2">Je suis :</legend>
-          <Col sm={10}>
-            <FormGroup check>
+          <Col> 
+            <FormGroup check >
               <Label check>
                 <Input type="radio" name="radio2" />{' '}
                 Un homme
@@ -65,10 +69,11 @@ class Formulaire extends React.Component {
             </FormGroup>
           </Col>
         </FormGroup>
+    
 
-        <FormGroup tag="fieldset" row>
+        <FormGroup tag="fieldset" >
           <legend className="col-form-label col-sm-2">Je recherche :</legend>
-          <Col sm={10}>
+          <Col>
             <FormGroup check>
               <Label check>
                 <Input type="radio" name="radio2" />{' '}

@@ -3,6 +3,7 @@ import ProfilesCard from '../components/ProfilesCard'
 import '../style.css'
 import { Container, Row } from 'react-bootstrap'
 import Nav2  from '../components/Nav2'
+import PopupMatch from '../components/PopupMatch'
 
 
 const allProfiles = [
@@ -55,6 +56,7 @@ function ListMatches() {
                         {allProfiles.map(item => <ProfilesCard {...item}/>)} 
                     </Row>
                 </Container>
+                <PopupMatch/>
             </Fragment>
         </div>
     );

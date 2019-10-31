@@ -13,9 +13,8 @@ import { Link } from "react-router-dom";
 class Accueil extends Component {
   render() {
     return (
-      <div className="content">
-
-        <Container className="header">
+      <div  >
+        <Container className="header"  >
         <Col sm={4}>
           <h1>ADOPTE UN MONSTRE</h1>
           <p> Le premier site de rencontre pour tous les amateurs de films d'horreurs</p>
@@ -23,7 +22,6 @@ class Accueil extends Component {
           <Link to="/formulaireDeConnexion"><button> Je m'inscris </button></Link>
           </Col>
         </Container>
-
 
 
         <Container className="suivre">
