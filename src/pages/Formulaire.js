@@ -5,6 +5,7 @@ import DisplayAvatars from '../components/DisplayAvatars';
 import axios from "axios";
 import Nav2  from '../components/Nav2'
 import '../components/Formulaire.css'
+import '../style.css';
 
 
 class Formulaire extends React.Component {
@@ -73,7 +74,7 @@ class Formulaire extends React.Component {
       <Nav2 />
       <div  className="formulaire">
       <Container>
-        <h1 className="color_green">Créez votre compte</h1>
+        <h1 className="green_color">Créez votre compte</h1>
         <Form>
           <Row>
             <Col sm={6}>

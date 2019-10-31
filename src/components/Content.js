@@ -18,21 +18,17 @@ class Accueil extends Component {
 
      <div className="accueil">
         <Container className="header">
-        <Col sm={4}>
+        <Col sm={6}>
           <h1>ADOPTE UN MONSTRE</h1>
-          <p> Le premier site de rencontre pour tous les amateurs de films d'horreurs</p>
-          <Link to="/formulaireDeConnexion"><button> Je m'inscris </button></Link>
+          <p>Le premier site de rencontre pour tous les amateurs de films d'horreurs</p>
+          <Link to="/formulaireDeConnexion">Je m'inscris </Link>
           </Col>
         </Container>
+        <div className="bg_footer">
         </div>
-
-        <Col sm={4}>
-        <div>
-        <img className="bg_footer" src= {bg_footer2}></img>
         </div>
-        </Col>
-
         
+       
         <div className="accueil2">
         <Container className="suivre">
         <Row>

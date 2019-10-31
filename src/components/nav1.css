@@ -9,7 +9,7 @@ body {
 
 .imgLogoNav1 {
     position: absolute;
-    top: 30px;
+    top: 15px;
     width: 400px;
     height: auto;
     margin-left: 100px;
@@ -26,15 +26,17 @@ body {
     background-repeat: no-repeat;
     border: none;
     margin-right: 100px;
-    margin-top: 50px;
+    margin-top: 30px;
     width: 200px;
     height: 95px;
+    z-index: 1;
 }
 
 .navNav1 {
-    height: 100px;
+    height: 80px;
     margin: 0;
     background-color:  #E54C84;
+    position: relative;
 }
 
 
@@ -48,7 +50,7 @@ body {
     .buttonNav1 {
 
     margin-top: 90px;
-
+    
     }
 
 }
