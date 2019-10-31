@@ -2,7 +2,6 @@ import React from 'react';
 import './PopupMatch.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactModal from 'react-modal';
-import { IoMdHeart } from "react-icons/io";
 import { Card, Row, Col, Container } from 'react-bootstrap';
 import '../style.css';
 import love_skull from '../img/love_skull.png'
@@ -29,7 +28,7 @@ class PopupMatch extends React.Component {
     render () {
       return (
         <div>
-          <button onClick={this.handleOpenModal}><IoMdHeart/></button>
+          <button onClick={this.handleOpenModal}></button>
           
           <ReactModal 
              style={{content: {backgroundColor: '#1C051C' }}}

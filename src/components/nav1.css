@@ -3,26 +3,17 @@ body {
     padding: 0;
 }
 
-/* .flexNav1 {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-} */
-
 .flexNav1 {
     position: relative;
 }
 
-.pourAbsoluteP {
+.imgLogoNav1 {
     position: absolute;
-    left: 0;
-    font-family: 'jmh_horrorhorror';
-    font-size: 2em;
-    color: #E2E0E2;
-    margin: 20px 80px;
-
+    top: 30px;
+    width: 400px;
+    height: auto;
+    margin-left: 100px;
+    
 }
 
 .buttonNav1 {
@@ -34,7 +25,7 @@ body {
     font-size: 1.5em;
     background-repeat: no-repeat;
     border: none;
-    margin-right: 80px;
+    margin-right: 100px;
     margin-top: 50px;
     width: 200px;
     height: 95px;
@@ -43,5 +34,35 @@ body {
 .navNav1 {
     height: 100px;
     margin: 0;
-    background-color:  #1C051C;
+    background-color:  #E54C84;
+}
+
+
+  @media screen and (max-width: 800px) {
+
+    .navNav1 {
+    height: 140px;
+
+    }
+
+    .buttonNav1 {
+
+    margin-top: 90px;
+
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .navNav1 {
+        height: 180px;
+    
+        }
+    
+        .buttonNav1 {
+    
+        margin-top: 130px;
+    
+        }
 }

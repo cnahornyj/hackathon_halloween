@@ -1,6 +1,9 @@
-
 import React,{ Component} from 'react';
-import ListMatches from './pages/ListMatches';
+import Accueil from './pages/Accueil';
+import Formulaire from "./pages/Formulaire";
+import ListMatches from "./pages/ListMatches";
+import {BrowserRouter, Switch, Route } from 'react-router-dom';
+
 
 
 class App extends Component {
