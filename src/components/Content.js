@@ -4,9 +4,12 @@ import { Container, Row, Col } from 'reactstrap';
 import './Content.css';
 import '../style.css';
 import picto_trouvez from '../img/picto_trouvez.png'
-import picto_rencontrez from '../img/picto_rencontrez.png'
-import picto_suivez from '../img/picto_suivez.png'
 import bg_footer2 from '../img/bg_footer2.png'
+import picto_rencontrez from '../img/picto_rencontrez.png';
+import picto_suivez from '../img/picto_suivez.png';
+import { Link } from "react-router-dom";
+
+
 
 class Accueil extends Component {
   render() {
@@ -18,7 +21,8 @@ class Accueil extends Component {
         <Col sm={4}>
           <h1>ADOPTE UN MONSTRE</h1>
           <p> Le premier site de rencontre pour tous les amateurs de films d'horreurs</p>
-          <button> Je m'inscris </button>
+          
+          <Link to="/formulaireDeConnexion"><button> Je m'inscris </button></Link>
           </Col>
         </Container>
         </div>

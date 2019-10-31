@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import '../style.css';
 import './nav2.css';
 import { NavLink } from 'reactstrap';
+import logo from '../img/logo.png';
+import { Link } from "react-router-dom";
+
 
 
 
@@ -13,13 +16,18 @@ class Nav2 extends Component {
     }
 
     render(){
+
+        const styleLink= {
+            color: "#E2E0E2",
+        }
+
         return(
             <nav className="navNav2">
-                <p className="pNav2">ADOPTE UN MONSTRE</p>
+                <Link exact to="/"><img src={logo} className="imgLogoNav2"/></Link>
                 <ul className="ulNav2">
-                    <li className="liNav2"><NavLink>MES MONSTRES</NavLink></li>
-                    <li className="liNav2"><NavLink>ACTU DE L'HORREUR</NavLink></li>
-                    <li className="liNav2"><NavLink>MON PROFIL</NavLink></li>
+                    <li className="liNav2"><Link to="/mesMonstres" style={styleLink}>MES MONSTRES</Link></li>
+                    <li className="liNav2"><Link style={styleLink}>ACTU DE L'HORREUR</Link></li>
+                    <li className="liNav2"><Link style={styleLink}>MON PROFIL</Link></li>
                 </ul>
             </nav>
         )

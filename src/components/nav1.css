@@ -7,14 +7,13 @@ body {
     position: relative;
 }
 
-.pourAbsoluteP {
+.imgLogoNav1 {
     position: absolute;
-    left: 0;
-    font-family: 'jmh_horrorhorror';
-    font-size: 2em;
-    color: #E2E0E2;
-    margin: 20px 80px;
-
+    top: 30px;
+    width: 400px;
+    height: auto;
+    margin-left: 100px;
+    
 }
 
 .buttonNav1 {
@@ -26,7 +25,7 @@ body {
     font-size: 1.5em;
     background-repeat: no-repeat;
     border: none;
-    margin-right: 80px;
+    margin-right: 100px;
     margin-top: 50px;
     width: 200px;
     height: 95px;
@@ -39,7 +38,7 @@ body {
 }
 
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 800px) {
 
     .navNav1 {
     height: 140px;
