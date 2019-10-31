@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import ProfilesCard from '../components/ProfilesCard'
 import '../style.css'
 import { Container, Row } from 'react-bootstrap'
+import Nav2  from '../components/Nav2'
 
 
 const allProfiles = [
@@ -45,14 +46,17 @@ const allProfiles = [
 
 function ListMatches() {
     return (
-        <Fragment>
-            <Container className="list-matches">
-                <h1 className="pink_color" style={{ marginBottom:'50px' }}>Les monstres qui vous correspondent</h1>
-                <Row>
-                    {allProfiles.map(item => <ProfilesCard {...item}/>)} 
-                </Row>
-            </Container>
-        </Fragment>
+        <div>
+            <Nav2 />
+            <Fragment>
+                <Container className="list-matches">
+                    <h1 className="pink_color" style={{ marginBottom:'50px' }}>Les monstres qui vous correspondent</h1>
+                    <Row>
+                        {allProfiles.map(item => <ProfilesCard {...item}/>)} 
+                    </Row>
+                </Container>
+            </Fragment>
+        </div>
     );
   }
 
