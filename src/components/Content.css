@@ -30,6 +30,7 @@
     font-size : 1em;
     text-align : center;
     padding : 22px;
+    color:white;
 }
 
 .content .header a {
@@ -62,14 +63,14 @@
 }
 
 /*Suivez-Trouver-Rencontrer*/
-.circle{
+.content .circle{
     background: white;
     height: 98px;
     border-style: 3px solid black;
     border-radius: 50%;
     width: 100px;
 }
-.card {
+.content  .card {
     display :flex;
     padding-top : 50px;
     margin-top : 20px;
@@ -79,16 +80,16 @@
     height : 319px;
     align-self: baseline;
 }
-.card-body{
+.content .card-body{
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.content p {
+.content .content p {
     color : white;
 }
-.image .card-body {
+.content .image .card-body {
     height : 20px;
     text-align : center;  
     padding : 10px;
@@ -102,35 +103,35 @@
     font-family: 'jmh_horrorhorror';
 
 }
-.img1 {
+.content .img1 {
     width : 53px;
     text-align : center;
     margin-left: 15px;
     padding-top: 10px;
     padding-bottom: 14px;
 }
-.img2 {
+.content .img2 {
     width: 68px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 29px;
 }
-.img3 {
+.content .img3 {
     width : 94px;
     text-align : center;
     margin-left: 8px;
     padding-top: 10px;
     padding-bottom: 29px;
 }
-.accueil2{
+.content .accueil2{
     background-color: #1C051C;
 }
-.suivre{
+.content .suivre{
     background-color: #1C051C;
     margin-top : 10px;
     height:473px;
 }
-.suivre .container{
+.content .suivre .container{
     height :150px;
     padding-top: 60px;
     margin-bottom: 25px;
