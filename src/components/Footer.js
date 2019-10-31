@@ -4,7 +4,8 @@ import youtube from '../img/youtube.png';
 import twitter from '../img/twitter.png';
 import instagram from '../img/instagram.png';
 import facebook from '../img/facebook.png';
-import { Container, NavLink } from 'reactstrap';
+import { Container } from 'reactstrap';
+import { Link } from "react-router-dom";
 import './footer.css';
 import '../style.css';
 
@@ -15,6 +16,11 @@ class Footer extends Component {
     }
 
     render(){
+        const styleLink= {
+            color: "#E2E0E2",
+            paddingLeft: "20px"
+        }
+
         return(
             <div>
                 <img src={bg_footer} alt="bg-footer" className="imgInclineeFooter" />
@@ -28,10 +34,10 @@ class Footer extends Component {
                                 <div><img src={twitter} className="cssImgIcones"/></div>
                             </div>
                             <ul className="cssDesLiens">
-                                <li><NavLink>MES MONSTRES</NavLink></li>
-                                <li><NavLink>ACTU DE L'HORREUR</NavLink></li>
-                                <li><NavLink>CONTACT</NavLink></li>
-                                <li><NavLink>MENTIONS LEGALES</NavLink></li>
+                                <li><Link to="/mesMonstres" style={styleLink}>MES MONSTRES</Link></li>
+                                <li><Link style={styleLink}>ACTU DE L'HORREUR</Link></li>
+                                <li><Link style={styleLink}>CONTACT</Link></li>
+                                <li><Link style={styleLink}>MENTIONS LEGALES</Link></li>
                             </ul>
                         </div>
                     </ Container>
