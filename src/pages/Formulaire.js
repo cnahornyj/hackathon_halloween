@@ -7,6 +7,7 @@ import Nav2  from '../components/Nav2'
 import '../components/Formulaire.css'
 import '../style.css';
 import './Formulaire.css';
+import Footer  from '../components/Footer'
 
 
 
@@ -199,17 +200,24 @@ class Formulaire extends React.Component {
         </Form>
       </Container>
       </div>
+      <Container>
+      <h2 style={{textAlign:"center", marginTop:"50px", fontSize: "2.5rem"}}>Cinephiles de l’horreur faites vos jeux</h2>
+      <div className="DisplayMovies">
       {this.state.movies ? (
             <DisplayMovies movies={this.state.movies} />
           ) : (
             <p>No data yet</p>
           )}
-          <div className="submit">
-          <Button variant="primary" type="submit">
-            Envoyez
-          </Button>
-          </div>
+      </div>
+      <div className="submit">
+        <Button variant="primary" type="submit">
+          Envoyez
+        </Button>
+      </div>
+      </Container>
+      <Footer/>
     </div>
+
 
 
     );
