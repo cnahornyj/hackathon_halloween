@@ -1,0 +1,31 @@
+/* Feuille de style ListMatches */
+
+
+.formulaire {
+background: url("../img/background_formulaire.jpg") no-repeat center;
+padding: 50px 0 100px 0;
+}
+.formulaire h1 {
+ margin-bottom: 50px;
+ font-size: 2.5rem;
+}
+
+.formulaire label {
+    margin-bottom: 5px;
+}
+
+.formulaire label, .formulaire legend {
+    color: white;
+}
+
+.formulaire input[type=text], .formulaire #exampleSelect {
+     border-radius: 50px;
+     -webkit-appearance: none;
+     -webkit-border-radius: 50px;
+     border:none;
+}
+.formulaire select:after {
+    background-image: url("../img/arrow_form.png") no-repeat;
+    position:absolute;
+
+}
