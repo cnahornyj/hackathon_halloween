@@ -69,7 +69,7 @@ class Accueil extends Component {
         </Container>
         </div>
 
-  
+      <div className= "fond_blanc">
       <Container className="partenaires">
       <h4> Nos partenaires</h4>
         <div className = "movie">
@@ -79,7 +79,7 @@ class Accueil extends Component {
           <img className="img_movie" src="https://files.slack.com/files-pri/T6SG2QGG2-FQ1JDMU4F/la-nuit-de-l_horreur.png" alt="pathe"></img>
           </div>
         </Container>
-   
+        </div>
       </div>
     )
   }
