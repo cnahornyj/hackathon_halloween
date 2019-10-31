@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row,   Form, FormGroup, Label, Input, Col } from 'reactstrap';
+import { Container, Row, Form, FormGroup, Label, Input, Col } from 'reactstrap';
 import DisplayMovies from '../components/DisplayMovies';
 import axios from "axios";
 import Nav2  from '../components/Nav2'
@@ -7,16 +7,20 @@ import '../components/Formulaire.css'
 
 
 class Formulaire extends React.Component {
-  constructor () {
-    super();
+  constructor (props) {
+    super(props);
     this.state = {
-      movies: null
+      movies: null,
+      monsters : [0]
     };
-    this.getMovies = this.getMovies.bind(this);
+
+      this.getMovies = this.getMovies.bind(this);
+      this.getAvatars = this.getAvatars.bind(this);
   }
 
   componentDidMount() {
     this.getMovies();
+    this.getAvatars();
   }
 
   getMovies() {
@@ -34,6 +38,21 @@ class Formulaire extends React.Component {
       });
   }
 
+  getAvatars() {
+    axios 
+    .get("https://hackathon-wild-hackoween.herokuapp.com/monsters")
+    .then(response => {
+      const { monsters } = this.state;
+      monsters.push(response.data.monsters[0])
+      this.setState({ monsters : response.data.monsters });
+    })
+    .catch(error => console.log( error ));
+  }
+
+  listAvatars() {
+    
+  }
+
   render(){
   return (
     <div>
@@ -46,6 +65,7 @@ class Formulaire extends React.Component {
             <Col sm={6}>
             <FormGroup>
               <Label for="exampleEmail">Choisissez votre avatar monstre :</Label>
+              <img src={ this.state.monsters[0].picture } alt="#"></img>
             </FormGroup>
             </Col>
 
@@ -119,7 +139,7 @@ class Formulaire extends React.Component {
           </FormGroup>
 
           <FormGroup>
-            <Label for="exampleEmail">Mon type de films d’horreurs préféré :</Label>
+            <Label for="exampleEmail">Mon type de film d’horreur préféré :</Label>
             <Input type="select" name="select" id="exampleSelect">
             <option>Bogeyman</option>
             <option>Comédie horrifique</option>
@@ -136,6 +156,10 @@ class Formulaire extends React.Component {
             <option>Thriller</option>
             <option>Zombie</option>
             </Input>
+          </FormGroup>
+          <FormGroup>
+            <Label>Ma description</Label>
+            <Input type="textarea" />
           </FormGroup>
           </Col>
           </Row>
@@ -155,4 +179,4 @@ class Formulaire extends React.Component {
 }
 
 
-export default Formulaire;
+export default Formulaire

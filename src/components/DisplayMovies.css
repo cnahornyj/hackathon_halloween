@@ -25,7 +25,9 @@
     position: absolute;
 
 }
-
+.movies_picture{ 
+    position: relative;
+}
 .DisplayMovies .btn-primary {
     background: url("../img/btn_submit.png") no-repeat;
     width: 180px;
