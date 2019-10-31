@@ -6,7 +6,6 @@ import Nav1  from '../components/Nav1'
 
 
 
-
 class Accueil extends Component {
   render() {
     return (
