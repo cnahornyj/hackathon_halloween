@@ -51,7 +51,7 @@ class PopupMatch extends React.Component {
               </Col>
             </Row>
          </Container> 
-              <h2 style={{ textAlign: "center", color: "#6BF8AC", fontFamily: 'jmh_horrorhorror', fontSize: "3em", margin: "100px 0px 60px 0px" }}>Choisie ton lieux de rencontre</h2>
+              <h2 style={{ textAlign: "center", color: "#6BF8AC", fontFamily: 'jmh_horrorhorror', fontSize: "3em", margin: "100px 0px 60px 0px" }}>Choisis ton lieu de rencontre</h2>
             <Row>
               <Col sm={3} style={{ textAlign:"center" }}>                
               <Card.Img variant="top" class="imglieu" src="https://www.jeuxetcompagnie.fr/wp-content/uploads/2018/10/faire-un-cimeti%C3%A8re-pour-halloween.jpg" />
@@ -67,7 +67,7 @@ class PopupMatch extends React.Component {
               </Col>
               <Col sm={3} style={{ textAlign:"center" }}>                
                 <Card.Img variant="top" class="imglieu" src="https://www.yves.brette.biz/public/humour/vegetarien_gore_abattoir________________.jpg" />
-                <Card.Title style={{ fontFamily: 'jmh_horrorhorror', fontSize: "2em", color: "white"  }}>Abatoire</Card.Title>
+                <Card.Title style={{ fontFamily: 'jmh_horrorhorror', fontSize: "2em", color: "white"  }}>Abattoir</Card.Title>
               </Col>
             </Row>
             <Col sm={12} style={{ textAlign:"center" }}>
