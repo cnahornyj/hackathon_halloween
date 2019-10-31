@@ -12,12 +12,14 @@ class Formulaire extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
+      pseudo: "Little witches",
       movies: null,
       monsters : [0]
     };
 
       this.getMovies = this.getMovies.bind(this);
       this.getAvatars = this.getAvatars.bind(this);
+      this.handleChange = this.handleChange.bind(this);
   }
 
   componentDidMount() {
@@ -68,7 +70,15 @@ class Formulaire extends React.Component {
     return boardAvatars 
   }
 
+  handleChange(event){
+    this.setState({ pseudo : event.target.value });
+}
+
   render(){
+  const styleH1Pseudo = {
+    color: "#E2E0E2",
+    textAlign: "left",
+  }
   return (
     <div>
       <Nav2 />
@@ -79,6 +89,7 @@ class Formulaire extends React.Component {
           <Row>
             <Col sm={6}>
             <FormGroup>
+              <h1 style={styleH1Pseudo}>{this.state.pseudo}</h1>
               <Label for="exampleEmail">Choisissez votre avatar monstre :</Label>
               <div className="block-avatars">
                   {this.state.movies ? (
@@ -92,7 +103,7 @@ class Formulaire extends React.Component {
             <Col sm={6}>
           <FormGroup>
             <Label for="exampleEmail">Pseudo :</Label>
-            <Input type="text" name="text" id="exampleText" />
+            <Input type="text" name="pseudo" id="exampleText" onChange={this.handleChange} value={this.state.pseudo} />
           </FormGroup>
           <FormGroup tag="fieldset">
 
