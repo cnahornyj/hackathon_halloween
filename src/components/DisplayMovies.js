@@ -1,14 +1,22 @@
 import React from 'react';
+import '../components/DisplayMovies.css'
+import '../style.css'
 
-function DisplayMovies({movies}){
+function DisplayMovies({ movies }){
     return(
-        <div className="DisplayMovies">
-            <img src={movies.posterUrl} alt="poster"/>
-            <h1>{movies.title}</h1>
-            <h2>{movies.director}</h2>
-            <h3>{movies.year}</h3>
-            <p>{movies.country}</p>
-        </div>
+        movies.map((movie, index) => (
+            <div key={index} className="bock-movies">
+             <div className="movies_picture">
+                    <img src={ movie.posterUrl } alt="poster"/>
+                    <button className="like_movies"></button>
+                </div>
+            <div className="infos_movies">
+                <h3>{movie.title}</h3>
+                <p>Réalisateur : {movie.director}</p>
+                <p>Date de sortie : {movie.year}</p>
+            </div>
+            </div>    
+        ))
     );
 };
 

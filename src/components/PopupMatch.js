@@ -7,10 +7,10 @@ import '../style.css';
 import love_skull from '../img/love_skull.png'
 
 class PopupMatch extends React.Component {
-    constructor () {
-      super();
+    constructor(props) {
+      super(props);
       this.state = {
-        showModal: false
+        showModal: true
       };
       
       this.handleOpenModal = this.handleOpenModal.bind(this);
@@ -23,20 +23,20 @@ class PopupMatch extends React.Component {
     
     handleCloseModal () {
       this.setState({ showModal: false });
+      this.props.resetOpenModal();
     }
     
-    render () {
+    render() {
       return (
         <div>
-          <button onClick={this.handleOpenModal}></button>
           
           <ReactModal 
              style={{content: {backgroundColor: '#1C051C' }}}
              isOpen={this.state.showModal} 
           >
-            
+
           <Container> 
-            <p className="match">It's a Monster Match!</p>
+            <h1 className="match">It's a Monster Match!</h1>
             <Row style={{ alignItems: "center" }}>
               <Col sm={4} style={{ textAlign:"center" }}>
                 <Card.Img variant="top" class="img" src="https://i.frg.im/u4tvA62n/bmatb72535_600.jpg?v=1528286304.147" />
