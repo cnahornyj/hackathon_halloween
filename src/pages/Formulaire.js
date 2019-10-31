@@ -1,11 +1,13 @@
 import React from 'react';
-import { Container, Row, Form, FormGroup, Label, Input, Col } from 'reactstrap';
+import { Container, Row, Form, FormGroup, Label, Input, Col, Button } from 'reactstrap';
 import DisplayMovies from '../components/DisplayMovies';
 import DisplayAvatars from '../components/DisplayAvatars';
 import axios from "axios";
 import Nav2  from '../components/Nav2'
 import '../components/Formulaire.css'
 import '../style.css';
+import './Formulaire.css';
+
 
 
 class Formulaire extends React.Component {
@@ -202,6 +204,11 @@ class Formulaire extends React.Component {
           ) : (
             <p>No data yet</p>
           )}
+          <div className="submit">
+          <Button variant="primary" type="submit">
+            Envoyez
+          </Button>
+          </div>
     </div>
 
 

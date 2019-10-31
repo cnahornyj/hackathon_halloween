@@ -51,7 +51,7 @@ function ListMatches() {
             <Nav2 />
             <Fragment>
                 <Container className="list-matches">
-                    <h1 className="pink_color" style={{ marginBottom:'50px' }}>Les monstres qui vous correspondent</h1>
+                    <h1 className="pink_color" style={{ margin:'50px 0' }}>Les monstres qui vous correspondent</h1>
                     <Row>
                         {allProfiles.map(item => <ProfilesCard {...item}/>)} 
                     </Row>
