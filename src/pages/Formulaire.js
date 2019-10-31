@@ -3,11 +3,13 @@ import { Container, Row, Form, FormGroup, Label, Input, Col, Button } from 'reac
 import DisplayMovies from '../components/DisplayMovies';
 import DisplayAvatars from '../components/DisplayAvatars';
 import axios from "axios";
-import Nav2  from '../components/Nav2'
-import '../components/Formulaire.css'
+import Nav2  from '../components/Nav2';
+import '../components/Formulaire.css';
 import '../style.css';
 import './Formulaire.css';
-import Footer  from '../components/Footer'
+import Footer  from '../components/Footer';
+import { Link } from "react-router-dom";
+
 
 
 
@@ -78,6 +80,10 @@ class Formulaire extends React.Component {
 }
 
   render(){
+  const styleLink= {
+    color: "white",
+    textDecoration: "none",
+  }
   const styleH1Pseudo = {
     color: "#E2E0E2",
     textAlign: "left",
@@ -210,9 +216,8 @@ class Formulaire extends React.Component {
           )}
       </div>
       <div className="submit">
-        <Button variant="primary" type="submit">
-          Envoyez
-        </Button>
+        <Link to="/mesMonstres" style={styleLink}><Button variant="primary" type="submit">
+            Envoyez</Button></Link>
       </div>
       </Container>
       <Footer/>
