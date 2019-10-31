@@ -29,3 +29,22 @@ padding: 50px 0 100px 0;
     position:absolute;
 
 }
+
+.formulaire .block-avatars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.formulaire .block-avatars img {
+    width: 25%;
+}
+
+.block-avatars button {
+    background: none;
+    border: none ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
