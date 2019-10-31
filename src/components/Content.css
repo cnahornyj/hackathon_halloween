@@ -2,21 +2,20 @@
     background-color: #1C051C;  
 }
 /*Le centre de la pae */
-.background_header .header {
-    background-color: #1C051C;
-}
 
-.header{
+.accueil{  
+    background: url('https://files.slack.com/files-pri/T6SG2QGG2-FQ02J0FQ8/background-home.jpg') no-repeat top center;
+    padding: 47px;
+    padding-bottom: 200px
+}   
+.content .header{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-    background-color: #1C051C;
+    align-items: center;  
 }
-.accueil{
-    background-color: #1C051C;
-}
-h1{
+
+.content h1{
     padding-top : 50px;
     text-align : center;
     margin: 55px auto;
@@ -25,14 +24,14 @@ h1{
     margin : 0 auto;
     padding-top : 204px;
 }
-p {
+.content p {
     font-size : 15px;
     text-align : center;
     padding : 22px;
     color : white,
 }
 
-.header button {
+.content .header button {
     margin-top : 40px;
     display: block;
     margin: auto;
@@ -45,10 +44,11 @@ p {
     margin-bottom: 80px;
 }
 /*Image du Footer*/
-.img_footer{
-    padding: 50px;
-    width :89%;
+.bg_footer{
+    height: 50px;
+    width: 100%;;
 }
+
 /*Suivez-Trouver-Rencontrer*/
 .circle{
     background: white;
@@ -65,6 +65,7 @@ p {
     background-color: #1C051C;
     margin-bottom: 20px;
     height : 319px;
+    align-self: baseline;
 }
 .card-body{
     padding: 54px;
@@ -72,7 +73,7 @@ p {
     flex-direction: column;
     align-items: center;
 }
-p {
+.content p {
     color : white;
 }
 .image .card-body {
@@ -81,27 +82,33 @@ p {
     padding : 10px;
 }
 
-h3{
+.content h3{
     text-align : center;
     padding : 5px;
     color : #6BF8AC;
 }
 .img1 {
-    width : 64px;
+    width : 53px;
     text-align : center;
     margin-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 14px;
 }
 .img2 {
     width: 68px;
     text-align: center;
-    margin-left: 15px;
     padding-top: 10px;
+    padding-bottom: 29px;
 }
 .img3 {
     width : 94px;
     text-align : center;
     margin-left: 8px;
     padding-top: 10px;
+    padding-bottom: 29px;
+}
+.accueil2{
+    background-color: #1C051C;
 }
 .suivre{
     background-color: #1C051C;
@@ -120,9 +127,7 @@ h3{
 h3{
     font-family: 'jmh_horrorhorror';
 }
-.circle {
-    border-style: 1px solid white;
-}
+
 
 /*Les Partenaires*/
 .partenaires .container{
@@ -164,3 +169,17 @@ h4 {
     padding: 15px;
     margin-bottom: 30px;
 }
+
+@media screen and (max-width: 420px){
+  
+    .card{
+        margin-top: 20px;
+        margin: auto;
+        width: 68%;
+        height: 330px;
+    }
+        .accueil2{
+            height : 70%;
+            background-color: #1C051C;
+        }
+    }

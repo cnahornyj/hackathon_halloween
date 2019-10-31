@@ -21,25 +21,25 @@ class Accueil extends Component {
         <Col sm={4}>
           <h1>ADOPTE UN MONSTRE</h1>
           <p> Le premier site de rencontre pour tous les amateurs de films d'horreurs</p>
-          
           <Link to="/formulaireDeConnexion"><button> Je m'inscris </button></Link>
           </Col>
         </Container>
         </div>
+
+        <Col sm={4}>
         <div>
-        <img className="img_footer" src= {bg_footer2}></img>
+        <img className="bg_footer" src= {bg_footer2}></img>
         </div>
+        </Col>
 
-
-        <div className="accueil">
+        
+        <div className="accueil2">
         <Container className="suivre">
         <Row>
         <Col sm={4}>
-        <Card>  
+        <Card>
             <CardBody className="image">
-            <div >
             <CardImg className ="img1"  src={picto_suivez}alt="" />
-            </div>
               <h3>Suivez</h3>
               <CardText>L'actualité des meilleurs films d'horreurs</CardText>
             </CardBody>
@@ -48,12 +48,10 @@ class Accueil extends Component {
 
           <Col sm={4}>
           <Card>
-            <CardBody className="image">
-              <div >
+            <CardBody className="image">  
             <CardImg className ="img2" src = {picto_trouvez}alt="" />
-            </div>
               <h3>Trouver</h3>
-              <CardText>L'actualité des meilleurs films d'horreurs</CardText>
+              <CardText>L'âme soeur en quelques heures</CardText>
             </CardBody>
           </Card>
           </Col>
@@ -61,20 +59,17 @@ class Accueil extends Component {
           <Col sm={4}>
           <Card>
             <CardBody className="image">
-            <div  >
             <CardImg className ="img3" src = {picto_rencontrez}alt="" />
-            </div>
               <h3>Rencontrez </h3>
               <CardText>Les monstres dans des lieux insolites</CardText>
             </CardBody>
           </Card>
-          </Col>
-
-         
+          </Col> 
         </Row>
         </Container>
         </div>
-          
+
+  
       <Container className="partenaires">
       <h4> Nos partenaires</h4>
         <div className = "movie">
@@ -84,8 +79,7 @@ class Accueil extends Component {
           <img className="img_movie" src="https://files.slack.com/files-pri/T6SG2QGG2-FQ1JDMU4F/la-nuit-de-l_horreur.png" alt="pathe"></img>
           </div>
         </Container>
-
-
+   
       </div>
     )
   }
