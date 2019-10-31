@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Form, FormGroup, Label, Input, Col } from 'reactstrap';
 import DisplayMovies from '../components/DisplayMovies';
+import DisplayAvatars from '../components/DisplayAvatars';
 import axios from "axios";
 import Nav2  from '../components/Nav2'
 import '../components/Formulaire.css'
@@ -52,16 +53,20 @@ class Formulaire extends React.Component {
   getAvatars() {
     axios 
     .get("https://hackathon-wild-hackoween.herokuapp.com/monsters")
-    .then(response => {
-      const { monsters } = this.state;
-      monsters.push(response.data.monsters[0])
-      this.setState({ monsters : response.data.monsters });
-    })
-    .catch(error => console.log( error ));
+    .then(response => response.data)
+      .then(data => {
+        this.setState({ 
+          monsters: this.listAvatars(data),
+        });
+      });
   }
 
-  listAvatars() {
-    
+  listAvatars = (data) => {
+    const boardAvatars = [];  
+    for (let i = 0; i < 8; i++){
+      boardAvatars.push(data.monsters[i])
+    } 
+    return boardAvatars 
   }
 
   handleChange(event){
@@ -85,10 +90,15 @@ class Formulaire extends React.Component {
             <FormGroup>
               <h1 style={styleH1Pseudo}>{this.state.pseudo}</h1>
               <Label for="exampleEmail">Choisissez votre avatar monstre :</Label>
-              <img src={ this.state.monsters[0].picture } alt="#"></img>
+              <div className="block-avatars">
+                  {this.state.movies ? (
+                <DisplayAvatars monsters={this.state.monsters} />
+              ) : (
+                <p>No data yet</p>
+              )}
+              </div>
             </FormGroup>
             </Col>
-
             <Col sm={6}>
           <FormGroup>
             <Label for="exampleEmail">Pseudo :</Label>
@@ -98,7 +108,7 @@ class Formulaire extends React.Component {
 
             <legend className="col-form-label">Je suis :</legend>
           <Row>
-            <Col>
+            <Col xs={6}>
               <FormGroup check>
                 <Label check>
                   <Input type="radio" name="radio2" />{' '}
@@ -106,7 +116,7 @@ class Formulaire extends React.Component {
                 </Label>
               </FormGroup>
               </Col>
-              <Col>
+              <Col xs={6}>
               <FormGroup check>
                 <Label check>
                   <Input type="radio" name="radio2" />{' '}

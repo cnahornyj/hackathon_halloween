@@ -5,7 +5,7 @@ import '../style.css'
 function DisplayMovies({ movies }){
     return(
         movies.map((movie, index) => (
-            <div key={index} className="bock-movies">
+            <div key={index} className="block-movies">
              <div className="movies_picture">
                     <img src={ movie.posterUrl } alt="poster"/>
                     <button className="like_movies"></button>
