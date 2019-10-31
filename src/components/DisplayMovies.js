@@ -1,15 +1,22 @@
 import React from 'react';
+import '../components/DisplayMovies.css'
+import '../style.css'
+import { Container, Button, Row } from 'react-bootstrap'
 
-function DisplayMovies({movies}){
+function DisplayMovies({ movies }){
     return(
         movies.map((movie, index) => (
-            <div key={index} className="DisplayMovies">
-                <img src={movie.posterUrl} alt="poster"/>
-                <h1>{movie.title}</h1>
-                <h2>{movie.director}</h2>
-                <h3>{movie.year}</h3>
-                <p>{movie.country}</p>
+            <div key={index} className="bock-movies">
+             <div className="movies_picture">
+                    <img src={ movies.posterUrl } alt="poster"/>
+                    <button className="like_movies"></button>
+                </div>
+            <div className="infos_movies">
+                <h3>{movies.title}</h3>
+                <p>Réalisateur : {movies.director}</p>
+                <p>Date de sortie : {movies.year}</p>
             </div>
+            </div>    
         ))
     );
 };
