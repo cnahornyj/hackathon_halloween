@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/hackathon_halloween/static/css/main.07ec3646.chunk.css",
-    "main.js": "/hackathon_halloween/static/js/main.304980d7.chunk.js",
-    "main.js.map": "/hackathon_halloween/static/js/main.304980d7.chunk.js.map",
+    "main.js": "/hackathon_halloween/static/js/main.2e72c138.chunk.js",
+    "main.js.map": "/hackathon_halloween/static/js/main.2e72c138.chunk.js.map",
     "runtime-main.js": "/hackathon_halloween/static/js/runtime-main.14757bce.js",
     "runtime-main.js.map": "/hackathon_halloween/static/js/runtime-main.14757bce.js.map",
     "static/css/2.0624914a.chunk.css": "/hackathon_halloween/static/css/2.0624914a.chunk.css",
-    "static/js/2.e6c0135a.chunk.js": "/hackathon_halloween/static/js/2.e6c0135a.chunk.js",
-    "static/js/2.e6c0135a.chunk.js.map": "/hackathon_halloween/static/js/2.e6c0135a.chunk.js.map",
+    "static/js/2.084398c6.chunk.js": "/hackathon_halloween/static/js/2.084398c6.chunk.js",
+    "static/js/2.084398c6.chunk.js.map": "/hackathon_halloween/static/js/2.084398c6.chunk.js.map",
     "index.html": "/hackathon_halloween/index.html",
-    "precache-manifest.0438345d9f0ff2d3aa925f47e42daf60.js": "/hackathon_halloween/precache-manifest.0438345d9f0ff2d3aa925f47e42daf60.js",
+    "precache-manifest.7c7ce6f276990820096ca1f5c7fd0468.js": "/hackathon_halloween/precache-manifest.7c7ce6f276990820096ca1f5c7fd0468.js",
     "service-worker.js": "/hackathon_halloween/service-worker.js",
     "static/css/2.0624914a.chunk.css.map": "/hackathon_halloween/static/css/2.0624914a.chunk.css.map",
     "static/css/main.07ec3646.chunk.css.map": "/hackathon_halloween/static/css/main.07ec3646.chunk.css.map",
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.14757bce.js",
     "static/css/2.0624914a.chunk.css",
-    "static/js/2.e6c0135a.chunk.js",
+    "static/js/2.084398c6.chunk.js",
     "static/css/main.07ec3646.chunk.css",
-    "static/js/main.304980d7.chunk.js"
+    "static/js/main.2e72c138.chunk.js"
   ]
 }

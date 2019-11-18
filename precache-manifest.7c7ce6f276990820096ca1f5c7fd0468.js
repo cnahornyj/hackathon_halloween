@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "617dadbb011a0e17323833afbdf86fc9",
+    "revision": "dcbcaf852d9723da0377654d623bdd44",
     "url": "/hackathon_halloween/index.html"
   },
   {
-    "revision": "4654c5f4e03960de2c9d",
+    "revision": "64694112b3f8085ca912",
     "url": "/hackathon_halloween/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "0528ffa1aa65528ad017",
+    "revision": "809c1d06925b191581ba",
     "url": "/hackathon_halloween/static/css/main.07ec3646.chunk.css"
   },
   {
-    "revision": "4654c5f4e03960de2c9d",
-    "url": "/hackathon_halloween/static/js/2.e6c0135a.chunk.js"
+    "revision": "64694112b3f8085ca912",
+    "url": "/hackathon_halloween/static/js/2.084398c6.chunk.js"
   },
   {
-    "revision": "0528ffa1aa65528ad017",
-    "url": "/hackathon_halloween/static/js/main.304980d7.chunk.js"
+    "revision": "809c1d06925b191581ba",
+    "url": "/hackathon_halloween/static/js/main.2e72c138.chunk.js"
   },
   {
     "revision": "73ede34fac4a9c4c789f",
