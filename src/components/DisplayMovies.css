@@ -1,0 +1,48 @@
+/* Feuille de style DisplayMovies */
+
+.DisplayMovies {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    flex-wrap: wrap;
+}
+
+.DisplayMovies h2 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 2.5rem;
+    
+}
+
+.DisplayMovies h3 {
+    color: #1C051C;
+    text-align: center;
+    font-family: 'jmh_horrorhorror';
+}
+
+.block-movies {
+    margin-bottom: 30px;
+}
+
+.infos_movies p {
+    color: #1C051C;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.like_movies {
+    background: url("../img/like_movies.png") no-repeat; 
+    width: 70px;
+    height: 70px;
+    border: none;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+.movies_picture{ 
+    position: relative;
+}
+
+

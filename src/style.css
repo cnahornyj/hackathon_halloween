@@ -1,0 +1,107 @@
+/* Feuille de style de base */
+
+html,
+body,
+textarea,
+figure,
+label {
+	margin: 0;
+    padding: 0;
+}
+
+body {
+	background-color: #fff;
+	color: #1C051C;
+	font-family: 'open_sansregular', helvetica, arial, sans-serif;
+	font-size: 1.2em; 
+	line-height: 1.5; 
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'jmh_horrorhorror';
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+
+h2 {
+    font-family: 'jmh_horrorhorror';
+    letter-spacing: 0.04em;
+}
+
+p {
+    font-family: 'open_sansregular';
+    font-size: 0.8em;
+}
+
+.green_color {
+    color: #6BF8AC;
+} 
+
+.purple_color {
+    color: #1C051C;
+} 
+
+.pink_color {
+    color: #E54C84;
+} 
+
+.green_background {
+    background-color: #6BF8AC;
+} 
+
+.purple_background  {
+    background-color: #1C051C;
+} 
+
+.pink_background  {
+    background-color: #E54C84;
+} 
+
+.grey_background{
+    background-color: #E2E0E2;
+}
+
+.green_shadow {
+    -webkit-box-shadow: 0px 10px 33px 0px rgba(107,248,172,1);
+    -moz-box-shadow: 0px 10px 33px 0px rgba(107,248,172,1);
+    box-shadow: 0px 10px 33px 0px rgba(107,248,172,1);
+}
+
+
+/* Fonts______________ */
+
+@font-face {
+    font-family: 'jmh_horrorhorror';
+    src: url('fonts/jmh_horror/jmh_horror-webfont.woff2') format('woff2'),
+         url('fonts/jmh_horror/jmh_horror-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/opensans/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('fonts/opensans/opensans-italic-webfont.woff2') format('woff2'),
+         url('fonts/opensans/opensans-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('fonts/opensans/opensans-bold-webfont.woff2') format('woff2'),
+         url('fonts/opensans/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
